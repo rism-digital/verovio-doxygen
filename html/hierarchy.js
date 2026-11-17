@@ -881,6 +881,9 @@ var hierarchy =
     [ "AttTextRendition", null, [
       [ "vrv::Rend", "classvrv_1_1_rend.html", null ]
     ] ],
+    [ "AttTextStyle", null, [
+      [ "vrv::ScoreDefInterface", "classvrv_1_1_score_def_interface.html", null ]
+    ] ],
     [ "AttTiePresent", null, [
       [ "vrv::Chord", "classvrv_1_1_chord.html", null ],
       [ "vrv::Note", "classvrv_1_1_note.html", null ]
@@ -1161,6 +1164,7 @@ var hierarchy =
     ] ],
     [ "vrv::ControlPointAdjustment", "structvrv_1_1_control_point_adjustment.html", null ],
     [ "vrv::ControlPointConstraint", "structvrv_1_1_control_point_constraint.html", null ],
+    [ "vrv::FontStore::Counters", "structvrv_1_1_font_store_1_1_counters.html", null ],
     [ "vrv::CurveSpannedElement", "classvrv_1_1_curve_spanned_element.html", null ],
     [ "vrv::CustomTuning", "classvrv_1_1_custom_tuning.html", null ],
     [ "vrv::LedgerLine::Dash", "classvrv_1_1_ledger_line_1_1_dash.html", null ],
@@ -1186,9 +1190,12 @@ var hierarchy =
       ] ]
     ] ],
     [ "vrv::ExpansionMap", "classvrv_1_1_expansion_map.html", null ],
+    [ "vrv::FontStore::FaceIdentity", "structvrv_1_1_font_store_1_1_face_identity.html", null ],
     [ "vrv::FeatureExtractor", "classvrv_1_1_feature_extractor.html", null ],
     [ "vrv::Filters", "classvrv_1_1_filters.html", null ],
+    [ "vrv::FontStore::FontFile", "structvrv_1_1_font_store_1_1_font_file.html", null ],
     [ "vrv::FontInfo", "classvrv_1_1_font_info.html", null ],
+    [ "vrv::FontStore", "classvrv_1_1_font_store.html", null ],
     [ "vrv::Fraction", "classvrv_1_1_fraction.html", null ],
     [ "vrv::FunctorBase", "classvrv_1_1_functor_base.html", [
       [ "vrv::ConstFunctor", "classvrv_1_1_const_functor.html", null ],
@@ -1317,6 +1324,9 @@ var hierarchy =
       [ "vrv::Functor", "classvrv_1_1_functor.html", null ]
     ] ],
     [ "vrv::Glyph", "classvrv_1_1_glyph.html", null ],
+    [ "vrv::FontStore::GlyphAnchor", "structvrv_1_1_font_store_1_1_glyph_anchor.html", null ],
+    [ "vrv::FontStore::GlyphMetrics", "structvrv_1_1_font_store_1_1_glyph_metrics.html", null ],
+    [ "vrv::FontStore::GlyphPlacement", "structvrv_1_1_font_store_1_1_glyph_placement.html", null ],
     [ "vrv::HumdrumReferenceItem", "structvrv_1_1_humdrum_reference_item.html", null ],
     [ "vrv::HumdrumSignifiers", "classvrv_1_1_humdrum_signifiers.html", null ],
     [ "vrv::Input", "classvrv_1_1_input.html", [
@@ -1416,6 +1426,7 @@ var hierarchy =
     [ "vrv::Resources", "classvrv_1_1_resources.html", null ],
     [ "vrv::RuntimeClock", "classvrv_1_1_runtime_clock.html", null ],
     [ "vrv::SegmentedLine", "classvrv_1_1_segmented_line.html", null ],
+    [ "vrv::FontStore::ShapedRun", "structvrv_1_1_font_store_1_1_shaped_run.html", null ],
     [ "vrv::SpannedElements", "structvrv_1_1_spanned_elements.html", null ],
     [ "vrv::StaffDefDrawingInterface", "classvrv_1_1_staff_def_drawing_interface.html", [
       [ "vrv::StaffDef", "classvrv_1_1_staff_def.html", null ]
@@ -1434,6 +1445,7 @@ var hierarchy =
     ] ],
     [ "vrv::TabCourseSort", "classvrv_1_1_tab_course_sort.html", null ],
     [ "vrv::TextDrawingParams", "classvrv_1_1_text_drawing_params.html", null ],
+    [ "vrv::TextEnclosure", "structvrv_1_1_text_enclosure.html", null ],
     [ "vrv::TextExtend", "classvrv_1_1_text_extend.html", null ],
     [ "vrv::Timemap", "classvrv_1_1_timemap.html", null ],
     [ "vrv::TimemapEntry", "structvrv_1_1_timemap_entry.html", null ],

@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['uncastoffdoc_1331',['UnCastOffDoc',['../classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f',1,'vrv::Doc']]],
-  ['uncastofffunctor_1332',['UnCastOffFunctor',['../classvrv_1_1_un_cast_off_functor.html',1,'vrv']]],
-  ['unclear_1333',['Unclear',['../classvrv_1_1_unclear.html',1,'vrv']]],
-  ['unescapehtmlentities_1334',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
-  ['updatecontrolpointparams_1335',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#ac67345936404ebba9295358c35a6c562',1,'vrv::BezierCurve']]],
-  ['updatecurveparams_1336',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223',1,'vrv::FloatingCurvePositioner']]],
-  ['updatefromtransloc_1337',['UpdateFromTransLoc',['../classvrv_1_1_rest.html#a2abfa9a01f57ac36187c78ebe7a30b9a',1,'vrv::Rest']]],
-  ['updatekeysig_1338',['UpdateKeySig',['../classvrv_1_1_score_def.html#ab4c1682800e8a866712b69deb6a0a6f3',1,'vrv::ScoreDef']]],
-  ['updatemetersig_1339',['UpdateMeterSig',['../classvrv_1_1_score_def.html#ae4ec1cc8724da05cd89e8479fec7ef8d',1,'vrv::ScoreDef']]],
-  ['updatepagedrawingsizes_1340',['UpdatePageDrawingSizes',['../classvrv_1_1_doc.html#a1fc55e74595046fc57621f3a0ad52788',1,'vrv::Doc']]],
-  ['updatestemlength_1341',['UpdateStemLength',['../classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f',1,'vrv::BeamElementCoord']]],
-  ['useblockstyle_1342',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7',1,'vrv::MultiRest']]],
-  ['useglobalstyling_1343',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
-  ['useliberationtextfont_1344',['UseLiberationTextFont',['../classvrv_1_1_resources.html#ab2b6f36c4af802d7f57f36cae6ff00f4',1,'vrv::Resources']]]
+  ['uncastoffdoc_1358',['UnCastOffDoc',['../classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f',1,'vrv::Doc']]],
+  ['uncastofffunctor_1359',['UnCastOffFunctor',['../classvrv_1_1_un_cast_off_functor.html',1,'vrv']]],
+  ['unclear_1360',['Unclear',['../classvrv_1_1_unclear.html',1,'vrv']]],
+  ['unescapehtmlentities_1361',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
+  ['updatecontrolpointparams_1362',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#ac67345936404ebba9295358c35a6c562',1,'vrv::BezierCurve']]],
+  ['updatecurveparams_1363',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223',1,'vrv::FloatingCurvePositioner']]],
+  ['updatefromtransloc_1364',['UpdateFromTransLoc',['../classvrv_1_1_rest.html#a2abfa9a01f57ac36187c78ebe7a30b9a',1,'vrv::Rest']]],
+  ['updatekeysig_1365',['UpdateKeySig',['../classvrv_1_1_score_def.html#ab4c1682800e8a866712b69deb6a0a6f3',1,'vrv::ScoreDef']]],
+  ['updatemetersig_1366',['UpdateMeterSig',['../classvrv_1_1_score_def.html#ae4ec1cc8724da05cd89e8479fec7ef8d',1,'vrv::ScoreDef']]],
+  ['updatepagedrawingsizes_1367',['UpdatePageDrawingSizes',['../classvrv_1_1_doc.html#a1fc55e74595046fc57621f3a0ad52788',1,'vrv::Doc']]],
+  ['updatestemlength_1368',['UpdateStemLength',['../classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f',1,'vrv::BeamElementCoord']]],
+  ['useblockstyle_1369',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7',1,'vrv::MultiRest']]],
+  ['useglobalstyling_1370',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
+  ['useglobaltextstyling_1371',['UseGlobalTextStyling',['../classvrv_1_1_device_context.html#aaf646e9fdd2ae01f7983605892ebcabe',1,'vrv::DeviceContext::UseGlobalTextStyling()'],['../classvrv_1_1_svg_device_context.html#a91818dc3adf0df0716443849df390966',1,'vrv::SvgDeviceContext::UseGlobalTextStyling()']]]
 ];

@@ -2301,6 +2301,12 @@
     <member refid="classvrv_1_1_corr_1a0e3bfa141e864556b9bfc744342dde37" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_corr_1a57e189ea0bd0e05c36ba66513f8aca9b" kind="function"><name>GetClassName</name></member>
   </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_counters" kind="struct"><name>vrv::FontStore::Counters</name>
+    <member refid="structvrv_1_1_font_store_1_1_counters_1ab6f18a744b537167fca85c2e3a0d0195" kind="variable"><name>m_decodedFonts</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_counters_1ac9381a071771ee0571be7b57ee2b2540" kind="variable"><name>m_extractedMetrics</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_counters_1a40339d3a1568745a7aae4318bb8d039d" kind="variable"><name>m_extractedOutlines</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_counters_1aee65c334e36b5e3cf17f1d757fd6311f" kind="variable"><name>m_shapedRuns</name></member>
+  </compound>
   <compound refid="classvrv_1_1_course" kind="class"><name>vrv::Course</name>
     <member refid="classvrv_1_1_course_1aa43ab302a4e618ebfeea7be4330e6679" kind="function"><name>Course</name></member>
     <member refid="classvrv_1_1_course_1ae1be9626429a4093fefd0eb7ff8f6896" kind="function"><name>~Course</name></member>
@@ -2628,13 +2634,16 @@
     <member refid="classvrv_1_1_device_context_1ace4b52794d87617c9a5ccc2bbbbbef8d" kind="variable"><name>m_userScaleX</name></member>
     <member refid="classvrv_1_1_device_context_1acd59e92ab41082b482c3ab557606a75e" kind="variable"><name>m_userScaleY</name></member>
     <member refid="classvrv_1_1_device_context_1ad3db72051fe5aabf39c8e753e18cfcf9" kind="variable"><name>m_viewBoxFactor</name></member>
+    <member refid="classvrv_1_1_device_context_1a50044b797f183ccb01274eb5cc6bb4e8" kind="function"><name>GetMusicGlyph</name></member>
     <member refid="classvrv_1_1_device_context_1a98b03a16d2a3ead9ac3d7e3bafe2490d" kind="function"><name>DrawPlaceholder</name></member>
     <member refid="classvrv_1_1_device_context_1a3e1c874b1a3f037f6dfda23e7c2647b9" kind="function"><name>ApplyOffset</name></member>
     <member refid="classvrv_1_1_device_context_1a135649ef93deb35278b06dbc541b24d5" kind="function"><name>SetCustomGraphicColor</name></member>
     <member refid="classvrv_1_1_device_context_1a38235e843ab93fa1fe79ec8af24e1f45" kind="function"><name>SetCustomGraphicAttributes</name></member>
     <member refid="classvrv_1_1_device_context_1afd76f01c9742de3d4a0446f905b1003b" kind="function"><name>UseGlobalStyling</name></member>
+    <member refid="classvrv_1_1_device_context_1aaf646e9fdd2ae01f7983605892ebcabe" kind="function"><name>UseGlobalTextStyling</name></member>
     <member refid="classvrv_1_1_device_context_1a73f8ff83665f5699325367b3a3743bae" kind="function"><name>RGB2Int</name></member>
     <member refid="classvrv_1_1_device_context_1a2485a0e9f6f135fb4c3213379d91c083" kind="function"><name>AddGlyphToTextExtend</name></member>
+    <member refid="classvrv_1_1_device_context_1a94b9f62643dc2a79e222240c365fe2e5" kind="function"><name>AddShapedRunToTextExtend</name></member>
   </compound>
   <compound refid="classvrv_1_1_diatonic_sort" kind="class"><name>vrv::DiatonicSort</name>
     <member refid="classvrv_1_1_diatonic_sort_1a451ccc2ea3a3da70b776a4c8904de885" kind="function"><name>DiatonicSort</name></member>
@@ -2729,13 +2738,13 @@
     <member refid="classvrv_1_1_doc_1a6c505af5a23076391901614df66b2196" kind="function"><name>GetCorrespondingScoreOrPart</name></member>
     <member refid="classvrv_1_1_doc_1a1a39fa9b720aefb8333df2d057e30528" kind="function"><name>GetCorrespondingScoreOrPart</name></member>
     <member refid="classvrv_1_1_doc_1a2e7e4e0d09a11e19f974b37c99bb55bc" kind="function"><name>GetCorrespondingScoreOrPart</name></member>
-    <member refid="classvrv_1_1_doc_1ae6b359a9f2a0398fac03d286097f0a41" kind="function"><name>GetGlyphHeight</name></member>
-    <member refid="classvrv_1_1_doc_1a2c3660e0380661b548274c42ce1fcd1d" kind="function"><name>GetGlyphWidth</name></member>
-    <member refid="classvrv_1_1_doc_1a6d9d841e5f1c5dfabe62a331c9175603" kind="function"><name>GetGlyphLeft</name></member>
-    <member refid="classvrv_1_1_doc_1a6573e8bda7402f74dd5a4319d939a644" kind="function"><name>GetGlyphRight</name></member>
-    <member refid="classvrv_1_1_doc_1a1d72add903bd7f0149047cf3e5d99ade" kind="function"><name>GetGlyphBottom</name></member>
-    <member refid="classvrv_1_1_doc_1ac276e4be77d570fbdedcc29883459473" kind="function"><name>GetGlyphTop</name></member>
-    <member refid="classvrv_1_1_doc_1a2777426d7159cb63dbf264dd8c6295ef" kind="function"><name>GetGlyphAdvX</name></member>
+    <member refid="classvrv_1_1_doc_1aa4e1c9afcbbc21d703c9bc6d76bd869d" kind="function"><name>GetGlyphHeight</name></member>
+    <member refid="classvrv_1_1_doc_1a5809826e772a9948aebfdb10cc34d04d" kind="function"><name>GetGlyphWidth</name></member>
+    <member refid="classvrv_1_1_doc_1a6acfd63fa104a46409012d2b1e483931" kind="function"><name>GetGlyphLeft</name></member>
+    <member refid="classvrv_1_1_doc_1a02bc2eb0cf5cfa2880460d07e85cb075" kind="function"><name>GetGlyphRight</name></member>
+    <member refid="classvrv_1_1_doc_1a71ccd4e116ea1ed852808c72ed513afc" kind="function"><name>GetGlyphBottom</name></member>
+    <member refid="classvrv_1_1_doc_1af1c2fb454ca2a5ebf6ea36b9d447f176" kind="function"><name>GetGlyphTop</name></member>
+    <member refid="classvrv_1_1_doc_1a5d607236ec309bc686c98e806a77ddb1" kind="function"><name>GetGlyphAdvX</name></member>
     <member refid="classvrv_1_1_doc_1a36d5ba0194d0ea33c2f146b45553a7bb" kind="function"><name>GetDrawingUnit</name></member>
     <member refid="classvrv_1_1_doc_1a615b2267ab2cc0bbc536ba42a6dd8e42" kind="function"><name>GetDrawingDoubleUnit</name></member>
     <member refid="classvrv_1_1_doc_1ae1cea0e11ed544125d478386d665b2ea" kind="function"><name>GetDrawingStaffSize</name></member>
@@ -2753,8 +2762,9 @@
     <member refid="classvrv_1_1_doc_1a6ee7c5483e27519feb5cfa930650fab0" kind="function"><name>GetDrawingMinimalLedgerLineExtension</name></member>
     <member refid="classvrv_1_1_doc_1aa31b34923fb0e5b4f062f36f5793a734" kind="function"><name>GetCueSize</name></member>
     <member refid="classvrv_1_1_doc_1a396a023e43889afb8c83bc368cada12b" kind="function"><name>GetCueScaling</name></member>
-    <member refid="classvrv_1_1_doc_1ae629c5b374a533aee6e98f1898b9cb67" kind="function"><name>GetDrawingSmuflFont</name></member>
+    <member refid="classvrv_1_1_doc_1ad86d2f5eee5cad64aa385329cc2201c4" kind="function"><name>GetDrawingSmuflFont</name></member>
     <member refid="classvrv_1_1_doc_1a3c048b3f32e3dd208250740f350b646e" kind="function"><name>GetDrawingLyricFont</name></member>
+    <member refid="classvrv_1_1_doc_1a272e01c01b2284b997a0946975703e17" kind="function"><name>GetDrawingTextFont</name></member>
     <member refid="classvrv_1_1_doc_1ae1578cf95c2a7b3af232dd717f02e831" kind="function"><name>GetFingeringFont</name></member>
     <member refid="classvrv_1_1_doc_1a8d4edd7a21ea31ac91c1c1cb6223fc16" kind="function"><name>GetTextGlyphHeight</name></member>
     <member refid="classvrv_1_1_doc_1aac7be65c76d924911f978d134fa5ffe3" kind="function"><name>GetTextGlyphWidth</name></member>
@@ -2854,6 +2864,7 @@
     <member refid="classvrv_1_1_doc_1a962739a2e8b5133617125ce33c3355a9" kind="function"><name>CollectReferringObjects</name></member>
     <member refid="classvrv_1_1_doc_1ab09d1142c97b77fdbb612c787049b907" kind="function"><name>GetMidiExportDone</name></member>
     <member refid="classvrv_1_1_doc_1a28ad795a0d3439e48b22401c8fe6824d" kind="function"><name>ConvertFontPoint</name></member>
+    <member refid="classvrv_1_1_doc_1a1a9d34b5858c066b41c676745f0272c8" kind="function"><name>ApplyTypography</name></member>
     <member refid="classvrv_1_1_doc_1ac57ef2adbcdc3d853c540a0c44470d49" kind="function"><name>GetMusicToLyricFontSizeRatio</name></member>
     <member refid="classvrv_1_1_doc_1a838cd1b9f9b28b230a47abed47daad1e" kind="function"><name>GetStaffDistance</name></member>
     <member refid="classvrv_1_1_doc_1a162e05164bbd41fefa38c12639f91c44" kind="function"><name>CalculateTimemap</name></member>
@@ -2895,6 +2906,7 @@
     <member refid="classvrv_1_1_doc_1a8ab1f3b20b1913e55cd9e9e3c7cfcde7" kind="function"><name>RefreshLayout</name></member>
     <member refid="classvrv_1_1_doc_1ada9d9a5f2f6e3bb7112a2c0d1c31240d" kind="function"><name>SetFocus</name></member>
     <member refid="classvrv_1_1_doc_1a47ba988110ca11b0d677e07f99d2d07d" kind="function"><name>CalcMusicFontSize</name></member>
+    <member refid="classvrv_1_1_doc_1a20faaac6b540f237bd5fa69d774b5731" kind="function"><name>GetMusicGlyph</name></member>
     <member refid="classvrv_1_1_doc_1affc2cd69bd867d30e1da75ac8b658f54" kind="function"><name>PrepareMeasureIndices</name></member>
     <member refid="classvrv_1_1_doc_1a3b83b6807641abc9c0256aa6414782d4" kind="function"><name>CollectVisibleScoresOrParts</name></member>
     <member refid="classvrv_1_1_doc_1aa7335ba3d4cada2ddc627258656440ea" kind="function"><name>ResetFocus</name></member>
@@ -3388,6 +3400,11 @@
     <member refid="classvrv_1_1_f_1ab3045c69086a822bebf73ae735cf872f" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_f_1af10342df6095dc44e08f35a03bbab1bd" kind="function"><name>IsSupportedChild</name></member>
   </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_face_identity" kind="struct"><name>vrv::FontStore::FaceIdentity</name>
+    <member refid="structvrv_1_1_font_store_1_1_face_identity_1a6b08e3d7be3934500f60c0b8352c1bdb" kind="variable"><name>m_value</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_face_identity_1a0ad9d8de23d92b0b92a0f122ee524411" kind="function"><name>operator==</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_face_identity_1a03187b05420a089112b189560b1baa00" kind="function"><name>operator bool</name></member>
+  </compound>
   <compound refid="classvrv_1_1_facsimile" kind="class"><name>vrv::Facsimile</name>
     <member refid="classvrv_1_1_facsimile_1ab309bae354e8bc6714c25970fb1e8d27" kind="function"><name>Facsimile</name></member>
     <member refid="classvrv_1_1_facsimile_1a9a570e5e0b5a52f255a7c3244c99de54" kind="function"><name>~Facsimile</name></member>
@@ -3782,6 +3799,13 @@
     <member refid="classvrv_1_1_floating_positioner_1a41e76ae10db9e8cb08ea407aa8c4bbd9" kind="function"><name>GetSpaceBelow</name></member>
     <member refid="classvrv_1_1_floating_positioner_1af47842971525f2065e7dc49bdd0f60e5" kind="function"><name>HasVerticalContentOverlap</name></member>
   </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_font_file" kind="struct"><name>vrv::FontStore::FontFile</name>
+    <member refid="structvrv_1_1_font_store_1_1_font_file_1a508b1cc1cbb6c50b33a82400a92a25de" kind="variable"><name>m_weight</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_font_file_1ad108d9c154d9f82165e54b24cd4b3935" kind="variable"><name>m_style</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_font_file_1a48afcdfe5113d96b2601b590f7a767c8" kind="variable"><name>m_format</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_font_file_1a5efcfd127409d96a4adc79009be4c03d" kind="variable"><name>m_mimeType</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_font_file_1a4f000ed80f3a94d0649ff50ed2a0fbb0" kind="variable"><name>m_data</name></member>
+  </compound>
   <compound refid="classvrv_1_1_font_info" kind="class"><name>vrv::FontInfo</name>
     <member refid="classvrv_1_1_font_info_1ac1357f29648cd90f1a4727dd949c4cb0" kind="variable"><name>m_pointSize</name></member>
     <member refid="classvrv_1_1_font_info_1a830f9314bc87e6151da27cc5f2438352" kind="variable"><name>m_letterSpacing</name></member>
@@ -3819,6 +3843,38 @@
     <member refid="classvrv_1_1_font_info_1a9c360203f29ddf2392219bbdfc2cf200" kind="function"><name>SetWidthToHeightRatio</name></member>
     <member refid="classvrv_1_1_font_info_1a1ad6c9a05fc2c6b09b2ad412e840118d" kind="function"><name>SetSmuflFont</name></member>
     <member refid="classvrv_1_1_font_info_1a59fe4b50a7a5716e0b4c336dc395b902" kind="function"><name>SetSmuflWithFallback</name></member>
+  </compound>
+  <compound refid="classvrv_1_1_font_store" kind="class"><name>vrv::FontStore</name>
+    <member refid="classvrv_1_1_font_store_1a30c6d29d9d8ffce921a444bc644da13d" kind="function"><name>FontStore</name></member>
+    <member refid="classvrv_1_1_font_store_1aa5c98348f68191c8ce4dc1414a1769c2" kind="function"><name>~FontStore</name></member>
+    <member refid="classvrv_1_1_font_store_1a06c5aa49957895461f4946d70b3e5cc9" kind="function"><name>FontStore</name></member>
+    <member refid="classvrv_1_1_font_store_1ab595dab9184e3d60dc698d9c5e675e1c" kind="function"><name>operator=</name></member>
+    <member refid="classvrv_1_1_font_store_1aae246f531b78388684d8aceaf4f8e7da" kind="function"><name>FontStore</name></member>
+    <member refid="classvrv_1_1_font_store_1adc03a17fa638dab0b3da171551a5fe5c" kind="function"><name>operator=</name></member>
+    <member refid="classvrv_1_1_font_store_1a852e799b2c7c16741e2650456fd4bed2" kind="function"><name>RegisterTextFont</name></member>
+    <member refid="classvrv_1_1_font_store_1a51b32021b6893ee0d54b9ba3bf73b9bf" kind="function"><name>RegisterMusicFont</name></member>
+    <member refid="classvrv_1_1_font_store_1a86a6546455a7a6ef243ab75267562202" kind="function"><name>HasFace</name></member>
+    <member refid="classvrv_1_1_font_store_1a05932b70d757c09a973b074f70564f95" kind="function"><name>GetGlyphMetrics</name></member>
+    <member refid="classvrv_1_1_font_store_1af723fcd4cd608121b076a3e9dd85834a" kind="function"><name>GetGlyphMetrics</name></member>
+    <member refid="classvrv_1_1_font_store_1ad98214a2264e80a6f5815a2903d94b84" kind="function"><name>GetGlyphOutline</name></member>
+    <member refid="classvrv_1_1_font_store_1aadf52cc3ff14c08b11e05ac4967511d4" kind="function"><name>GetGlyphOutline</name></member>
+    <member refid="classvrv_1_1_font_store_1a4890861e57538b7372802e2a1c3e8249" kind="function"><name>GetMusicGlyphAnchors</name></member>
+    <member refid="classvrv_1_1_font_store_1a46091e41a855b82b65c263f88c124366" kind="function"><name>GetFontFiles</name></member>
+    <member refid="classvrv_1_1_font_store_1abcd0469fc27a9da2326cbdcfd32894d0" kind="enum"><name>Kind</name></member>
+    <member refid="classvrv_1_1_font_store_1abcd0469fc27a9da2326cbdcfd32894d0a47dcbd834e669233d7eb8a51456ed217" kind="enumvalue"><name>Music</name></member>
+    <member refid="classvrv_1_1_font_store_1abcd0469fc27a9da2326cbdcfd32894d0a9dffbf69ffba8bc38bc4e01abf4b1675" kind="enumvalue"><name>Text</name></member>
+    <member refid="classvrv_1_1_font_store_1a8a6818006dac3987acfcace26628d92e" kind="enum"><name>Weight</name></member>
+    <member refid="classvrv_1_1_font_store_1a8a6818006dac3987acfcace26628d92ea960b44c579bc2f6818d2daaf9e4c16f0" kind="enumvalue"><name>Normal</name></member>
+    <member refid="classvrv_1_1_font_store_1a8a6818006dac3987acfcace26628d92ea114c3050111d8b8ddd830b99ccebd246" kind="enumvalue"><name>Bold</name></member>
+    <member refid="classvrv_1_1_font_store_1a82b679aee8f28d1804b32725fc29995e" kind="enum"><name>Style</name></member>
+    <member refid="classvrv_1_1_font_store_1a82b679aee8f28d1804b32725fc29995ea960b44c579bc2f6818d2daaf9e4c16f0" kind="enumvalue"><name>Normal</name></member>
+    <member refid="classvrv_1_1_font_store_1a82b679aee8f28d1804b32725fc29995ea1d874710ccdcd46b95397049d2e7500c" kind="enumvalue"><name>Italic</name></member>
+    <member refid="classvrv_1_1_font_store_1a130f43a6ace5150c9628a54f7259ab47" kind="variable"><name>m_impl</name></member>
+    <member refid="classvrv_1_1_font_store_1a3cbabd9c4770f6a253dc8c286751abc9" kind="function"><name>ShapeText</name></member>
+    <member refid="classvrv_1_1_font_store_1af9e984c5ea5213902a71e77496d1f692" kind="function"><name>GetGeneration</name></member>
+    <member refid="classvrv_1_1_font_store_1a0e73449ef8f229ad6a51c773dc125b36" kind="function"><name>PinBundledData</name></member>
+    <member refid="classvrv_1_1_font_store_1a33d9ac3b37f1722c0fdbe4a8d9df5460" kind="function"><name>GetCounters</name></member>
+    <member refid="classvrv_1_1_font_store_1a40387bca86872ec2ca90a40aad37a5c8" kind="function"><name>ReadFile</name></member>
   </compound>
   <compound refid="classvrv_1_1_fraction" kind="class"><name>vrv::Fraction</name>
     <member refid="classvrv_1_1_fraction_1a23e3d6d4defa3dc38bd50bdc84c0f2ee" kind="variable"><name>m_numerator</name></member>
@@ -4344,19 +4400,17 @@
   </compound>
   <compound refid="classvrv_1_1_glyph" kind="class"><name>vrv::Glyph</name>
     <member refid="classvrv_1_1_glyph_1abaa81649fa0f26a56a1ce36130bcd9ef" kind="function"><name>Glyph</name></member>
-    <member refid="classvrv_1_1_glyph_1a5dc94fdc1e02a5160b4592857494efe5" kind="function"><name>Glyph</name></member>
     <member refid="classvrv_1_1_glyph_1a01b0c469a9de1943c2e4379645ea1317" kind="function"><name>Glyph</name></member>
     <member refid="classvrv_1_1_glyph_1a614386b61204b49e28a369d51c6431d3" kind="function"><name>~Glyph</name></member>
     <member refid="classvrv_1_1_glyph_1a9e5796c79d1e0231a409cfe7bb17606e" kind="function"><name>GetUnitsPerEm</name></member>
     <member refid="classvrv_1_1_glyph_1a5091ce2971805dbf9d19d9844868df81" kind="function"><name>SetUnitsPerEm</name></member>
-    <member refid="classvrv_1_1_glyph_1a30d10c515bce314c1c2b19ad8239a721" kind="function"><name>GetCodeStr</name></member>
+    <member refid="classvrv_1_1_glyph_1a611dbe3e850e4c0f0930fd95a174b5cd" kind="function"><name>GetCodeStr</name></member>
     <member refid="classvrv_1_1_glyph_1a6ca2bc4e19257a8fcb8d0e578b180a0d" kind="function"><name>SetCodeStr</name></member>
-    <member refid="classvrv_1_1_glyph_1a33a6f3e70d43f477d1ac8762d0f73646" kind="function"><name>GetPath</name></member>
-    <member refid="classvrv_1_1_glyph_1ac8856cf1d77ee68a646a86c4c12673fa" kind="function"><name>SetPath</name></member>
     <member refid="classvrv_1_1_glyph_1aedf250e974fd47441eac15b069d0f350" kind="function"><name>GetHorizAdvX</name></member>
     <member refid="classvrv_1_1_glyph_1ab4462f3d4439c83d47ff3d6799a49c35" kind="function"><name>SetHorizAdvX</name></member>
-    <member refid="classvrv_1_1_glyph_1af45f34990273cf042f9c89bb5a934412" kind="function"><name>GetFallback</name></member>
-    <member refid="classvrv_1_1_glyph_1aa5c98ddaddb4009d2bbaa115186f0291" kind="function"><name>SetFallback</name></member>
+    <member refid="classvrv_1_1_glyph_1ae2aa77c43d12abed48c08d160dc64023" kind="function"><name>SetFace</name></member>
+    <member refid="classvrv_1_1_glyph_1a87471ee82343bacd8ab58eaf16f22d08" kind="function"><name>GetFaceIdentity</name></member>
+    <member refid="classvrv_1_1_glyph_1a7212714951256071372c069ad66aacc8" kind="function"><name>GetGlyphId</name></member>
     <member refid="classvrv_1_1_glyph_1a342b2bb94cf88017e3658514827b50ff" kind="variable"><name>m_x</name></member>
     <member refid="classvrv_1_1_glyph_1a073df99cccb5add5a502fb01779cd6fa" kind="variable"><name>m_y</name></member>
     <member refid="classvrv_1_1_glyph_1adad1c946b65eac0dafcb213ec247c54d" kind="variable"><name>m_width</name></member>
@@ -4364,17 +4418,40 @@
     <member refid="classvrv_1_1_glyph_1afcd5c1e7a531d61a1a8b8035f4f2796a" kind="variable"><name>m_horizAdvX</name></member>
     <member refid="classvrv_1_1_glyph_1a486a6e8362446d94f4250951e62b5a69" kind="variable"><name>m_unitsPerEm</name></member>
     <member refid="classvrv_1_1_glyph_1a9856bc34c62eba64fb7b2fb33d26f6b9" kind="variable"><name>m_codeStr</name></member>
-    <member refid="classvrv_1_1_glyph_1a2f557d7e7985276f26a07a387e4b7c07" kind="variable"><name>m_path</name></member>
-    <member refid="classvrv_1_1_glyph_1ae447b5e8c6602aff0920bd5100750f00" kind="variable"><name>m_xml</name></member>
     <member refid="classvrv_1_1_glyph_1a5c7c0faf34c490c2af271dfc17ab4d15" kind="variable"><name>m_anchors</name></member>
-    <member refid="classvrv_1_1_glyph_1ae9cddd87d03b83bb67d620256cbaebfe" kind="variable"><name>m_isFallback</name></member>
+    <member refid="classvrv_1_1_glyph_1a6f7d8c307be626fe932d43dfa7e05237" kind="variable"><name>m_faceIdentity</name></member>
+    <member refid="classvrv_1_1_glyph_1aadcc4a19890053b8bd560e6f274a84dc" kind="variable"><name>m_glyphId</name></member>
     <member refid="classvrv_1_1_glyph_1af701214d252628b10a5ac0dc5e392f60" kind="function"><name>GetBoundingBox</name></member>
     <member refid="classvrv_1_1_glyph_1a3191a35305471ae3312c883944eba295" kind="function"><name>SetBoundingBox</name></member>
     <member refid="classvrv_1_1_glyph_1a009d8cbbd328a087d26cec6c411de075" kind="function"><name>SetAnchor</name></member>
     <member refid="classvrv_1_1_glyph_1ad90069e264e474965231a37472d0aaf3" kind="function"><name>HasAnchor</name></member>
     <member refid="classvrv_1_1_glyph_1ae251d880e06030eeee6ef86d66d96c90" kind="function"><name>GetAnchor</name></member>
-    <member refid="classvrv_1_1_glyph_1a659233c25afa497947e075a8705a4779" kind="function"><name>SetXML</name></member>
-    <member refid="classvrv_1_1_glyph_1a3dd5d2e8c5a83e62b5e423d0a65180d6" kind="function"><name>GetXML</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_glyph_anchor" kind="struct"><name>vrv::FontStore::GlyphAnchor</name>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_anchor_1a5bad516cca70a55aa3ddd2c279aa40cf" kind="variable"><name>m_name</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_anchor_1ac6afda9d94534a01a1b5e459ad62316a" kind="variable"><name>m_x</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_anchor_1af7575dbd6eb45291be5718ec64f875cc" kind="variable"><name>m_y</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_glyph_metrics" kind="struct"><name>vrv::FontStore::GlyphMetrics</name>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1a089d602d4dab0a41aa6e61d3e3d8c88c" kind="variable"><name>m_face</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1ae3ee9f1aefd4be1252bc256ab4d9efef" kind="variable"><name>m_glyphId</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1aa54e0b5d9a8178dbeacd2d90560f6891" kind="variable"><name>m_unitsPerEm</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1a4bd0a79f0e01bcebf21b91412870224f" kind="variable"><name>m_advanceX</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1a3f6845d96cad4898e00b2ac1c8a74295" kind="variable"><name>m_xBearing</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1a0de206a0d0ad340450b61bb69d960582" kind="variable"><name>m_yBearing</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1a63f7ac4fa6a6ee6ef41173c73ce7ade4" kind="variable"><name>m_width</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_metrics_1ab6d219f9bb3ac61e54cf93be8dafe727" kind="variable"><name>m_height</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_glyph_placement" kind="struct"><name>vrv::FontStore::GlyphPlacement</name>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1ab569d78f64a9b82e95f6082c15b253a7" kind="variable"><name>m_face</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1af9a8b350f68736e44450f5cbf2bbed1f" kind="variable"><name>m_unitsPerEm</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1ad986012e8a09f8e222ff6287618f2aee" kind="variable"><name>m_glyphId</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1a7935763266235a8cf8888d38edf5e520" kind="variable"><name>m_cluster</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1afed7cc1fe79f6b21dec44fadd373556c" kind="variable"><name>m_advanceX</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1a51c6c55c73a122e35d2b0ae52b23f2bd" kind="variable"><name>m_advanceY</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1a748093d6b110053f6aed0f31edd3096f" kind="variable"><name>m_offsetX</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1a83882849c0f3f449dbb8ef42c0060f71" kind="variable"><name>m_offsetY</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_glyph_placement_1a13446dc1086f957c45fc1bfbd7b0fbe9" kind="function"><name>operator==</name></member>
   </compound>
   <compound refid="classvrv_1_1_svg_device_context_1_1_glyph_ref" kind="class"><name>vrv::SvgDeviceContext::GlyphRef</name>
     <member refid="classvrv_1_1_svg_device_context_1_1_glyph_ref_1ad8fb17e4f99b5a5a4fc6a35baea74149" kind="variable"><name>m_glyph</name></member>
@@ -5720,20 +5797,6 @@
     <member refid="classvrv_1_1_liquescent_1a180a6c59995108c42007f5d5c758278f" kind="function"><name>GetPositionInterface</name></member>
     <member refid="classvrv_1_1_liquescent_1adf1b1a7f37f79e20d88879ebedf93d27" kind="variable"><name>m_noTails</name></member>
     <member refid="classvrv_1_1_liquescent_1aa5daadfbb45012a6e54ffc4ed4ec66a2" kind="function"><name>HasToBeAligned</name></member>
-  </compound>
-  <compound refid="classvrv_1_1_resources_1_1_loaded_font" kind="class"><name>vrv::Resources::LoadedFont</name>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a5879fad2e127dc5498bf3eb00ad651bb" kind="variable"><name>m_name</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a6cb5c9e78edb6809ff0205b592a60c70" kind="variable"><name>m_glyphTable</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1af96b69a7b1b1a3a3028044b3d8574471" kind="variable"><name>m_isFallback</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a10f71aacb2f572b16342db1988c9c595" kind="variable"><name>m_css</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1ad7c04f4ac0fa59be96aaebcf5f2043fd" kind="function"><name>LoadedFont</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a795cd1c72a048c918469918cf727060f" kind="function"><name>~LoadedFont</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1ad6f85bd9e67e943f0ac2f4d72cc54d0f" kind="function"><name>GetName</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a61a491103ab8d13858fff484102c3767" kind="function"><name>GetGlyphTable</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a20ba7d5bd37424d4a14ca7803dab5e90" kind="function"><name>GetGlyphTableForModification</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1a68cb89d7eb2226ac5df4b073ccb59c36" kind="function"><name>isFallback</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1ae88cfc4b4e688ec69d063c4c54ab15a1" kind="function"><name>SetCSSFont</name></member>
-    <member refid="classvrv_1_1_resources_1_1_loaded_font_1ad0c97de96b83cabd8fc16dcc7dd08434" kind="function"><name>GetCSSFont</name></member>
   </compound>
   <compound refid="classvrv_1_1_lv" kind="class"><name>vrv::Lv</name>
     <member refid="classvrv_1_1_lv_1a0b1d1b640c02ebbb4037b227286aeed8" kind="function"><name>Lv</name></member>
@@ -7304,7 +7367,6 @@
     <member refid="classvrv_1_1_option_1a582a7279f3217fead90a86c0435e05b2" kind="variable"><name>s_condense</name></member>
     <member refid="classvrv_1_1_option_1a3515689458a59a0b507183e6fe02e2a1" kind="variable"><name>s_durationEq</name></member>
     <member refid="classvrv_1_1_option_1a34d31a33f75e2ab945d6fa6eec4c1c21" kind="variable"><name>s_elision</name></member>
-    <member refid="classvrv_1_1_option_1abe8bc730659cf25707fa4a068fde3b14" kind="variable"><name>s_fontFallback</name></member>
     <member refid="classvrv_1_1_option_1a14d07a13838db691bd2884fd910e45b4" kind="variable"><name>s_footer</name></member>
     <member refid="classvrv_1_1_option_1afa171129fde7a637aabbb619cba40ce6" kind="variable"><name>s_header</name></member>
     <member refid="classvrv_1_1_option_1abe486fbc73ea9c51690eb146231cc055" kind="variable"><name>s_ligatureOblique</name></member>
@@ -7550,6 +7612,8 @@
     <member refid="classvrv_1_1_options_1ae7d9f64725573315b601a5548197f624" kind="variable"><name>m_svgHtml5</name></member>
     <member refid="classvrv_1_1_options_1a178b799184bfe27ef6fb8ab1aea375e2" kind="variable"><name>m_svgFormatRaw</name></member>
     <member refid="classvrv_1_1_options_1a2127320737a3f6ffc3d49a10e1720562" kind="variable"><name>m_svgRemoveXlink</name></member>
+    <member refid="classvrv_1_1_options_1aad88a75c57d893772208809beb42e731" kind="variable"><name>m_svgTextAsPaths</name></member>
+    <member refid="classvrv_1_1_options_1aac4a24a4f7e295c05952c216fc4e5855" kind="variable"><name>m_svgTextEmbedFont</name></member>
     <member refid="classvrv_1_1_options_1acc1b97bd777c33453e4d83a0c0c882e3" kind="variable"><name>m_svgAdditionalAttribute</name></member>
     <member refid="classvrv_1_1_options_1a1653e0f2baa0ea980fa6d0b0f2d41184" kind="variable"><name>m_unit</name></member>
     <member refid="classvrv_1_1_options_1a13f3cec902927a5e97f748e26fdeca6f" kind="variable"><name>m_useFacsimile</name></member>
@@ -7575,10 +7639,12 @@
     <member refid="classvrv_1_1_options_1aa1eb522878a82945305811f632b9170a" kind="variable"><name>m_extenderLineMinSpace</name></member>
     <member refid="classvrv_1_1_options_1a9a57d4867ee3e463e348edb770fb26af" kind="variable"><name>m_fingeringScale</name></member>
     <member refid="classvrv_1_1_options_1a02ded0c8e17a9eb4a2abaf311ca5603e" kind="variable"><name>m_font</name></member>
-    <member refid="classvrv_1_1_options_1a95689f01e02c685c22c9d607c16a036d" kind="variable"><name>m_fontAddCustom</name></member>
-    <member refid="classvrv_1_1_options_1a70dbab370a124dfee8bf88428b65e3cc" kind="variable"><name>m_fontFallback</name></member>
-    <member refid="classvrv_1_1_options_1a026f093b9f1623e8580e8d98be6ee6ce" kind="variable"><name>m_fontLoadAll</name></member>
-    <member refid="classvrv_1_1_options_1a8deb310b3b5a10155e4508c1f11b947b" kind="variable"><name>m_fontTextLiberation</name></member>
+    <member refid="classvrv_1_1_options_1ac125dfee9a983fffa6f6ab12eafab68e" kind="variable"><name>m_fontAddMusic</name></member>
+    <member refid="classvrv_1_1_options_1a06270720e93433ed9221e9ec6413f151" kind="variable"><name>m_fontAddMusicAs</name></member>
+    <member refid="classvrv_1_1_options_1ae86086fc36781a91d24a411381879b8c" kind="variable"><name>m_fontAddText</name></member>
+    <member refid="classvrv_1_1_options_1a0b454ecbc60cf53b8e7706e7054cff29" kind="variable"><name>m_fontAddTextAs</name></member>
+    <member refid="classvrv_1_1_options_1a9b906fb2f99105021d5ad4f1288ed353" kind="variable"><name>m_fontFallback</name></member>
+    <member refid="classvrv_1_1_options_1adb744583fefa89832c45e9cb28849e7d" kind="variable"><name>m_fontText</name></member>
     <member refid="classvrv_1_1_options_1a774df12da8a9067314eb91a4d31bfb42" kind="variable"><name>m_graceFactor</name></member>
     <member refid="classvrv_1_1_options_1a68a4f1007a6e61c01f8b20559f9ebf06" kind="variable"><name>m_graceRhythmAlign</name></member>
     <member refid="classvrv_1_1_options_1a89d555af121de6d29815f5c4168f1724" kind="variable"><name>m_graceRightAlign</name></member>
@@ -8685,7 +8751,7 @@
     <member refid="classvrv_1_1_repeat_mark_1aff8637077405535919df8777ea308c40" kind="function"><name>GetMarkGlyph</name></member>
   </compound>
   <compound refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor" kind="class"><name>vrv::ReplaceDrawingValuesInStaffDefFunctor</name>
-    <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1ad204783cce6ac7dfa0f8e7d5c73ab5b9" kind="function"><name>ReplaceDrawingValuesInStaffDefFunctor</name></member>
+    <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a41f531a193de04d7af05ac770593a603" kind="function"><name>ReplaceDrawingValuesInStaffDefFunctor</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1ad78fe2b0711890043c33d3d1f7598e0e" kind="function"><name>~ReplaceDrawingValuesInStaffDefFunctor</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a8a14c9352ef9b7d740198c94233b5c16" kind="function"><name>VisitStaffDef</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a769d41afb6ccea6861e89b67a3c4049a" kind="variable"><name>m_clef</name></member>
@@ -8693,6 +8759,7 @@
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a8b32a249db1f0edf98780fd42d7cfffd" kind="variable"><name>m_mensur</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a1198d694354b0b5b7e9508716fd8d68d" kind="variable"><name>m_meterSig</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1ad73202b79c26389e884f41ed500c1288" kind="variable"><name>m_meterSigGrp</name></member>
+    <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1a9d434935366ed2b315d05be4398ddb0a" kind="variable"><name>m_newScoreDef</name></member>
     <member refid="classvrv_1_1_replace_drawing_values_in_staff_def_functor_1aae06c24dbc77ad0589b26828ea1d2237" kind="function"><name>ImplementsEndInterface</name></member>
   </compound>
   <compound refid="classvrv_1_1_reset_data_functor" kind="class"><name>vrv::ResetDataFunctor</name>
@@ -8796,52 +8863,45 @@
     <member refid="classvrv_1_1_resources_1a8d262db67c0625b9f25d0eb60abab5b5" kind="function"><name>~Resources</name></member>
     <member refid="classvrv_1_1_resources_1abb5423785eb49bc813f0113603f0b342" kind="function"><name>GetPath</name></member>
     <member refid="classvrv_1_1_resources_1abcb461570a502e03dba625cf2cf02092" kind="function"><name>SetPath</name></member>
+    <member refid="classvrv_1_1_resources_1a85194fb741a391bc34b2cfeff5fe58f8" kind="function"><name>GetFontStore</name></member>
+    <member refid="classvrv_1_1_resources_1ac9975ee9e186e27f820e9ed01ef1c37b" kind="function"><name>GetFontStoreForModification</name></member>
     <member refid="classvrv_1_1_resources_1ad1b9c8369b5ab981a2c0af196c4c6e5d" kind="function"><name>GetDefaultPath</name></member>
     <member refid="classvrv_1_1_resources_1a371f5c1b14476b1b5b78364e825bdedf" kind="function"><name>SetDefaultPath</name></member>
     <member refid="classvrv_1_1_resources_1af7823e10567dae86983fad00b0d25290" kind="function"><name>InitFonts</name></member>
-    <member refid="classvrv_1_1_resources_1a112c2087e61d477c8d0dece3165f0e74" kind="function"><name>SetFont</name></member>
-    <member refid="classvrv_1_1_resources_1a99311b8060a09ac649a7fdfcd9204706" kind="function"><name>AddCustom</name></member>
-    <member refid="classvrv_1_1_resources_1ab79e6a3f74b0ea800441772eda681b63" kind="function"><name>LoadAll</name></member>
-    <member refid="classvrv_1_1_resources_1a3c26f04d5a1d9a6b7ffc848161306624" kind="function"><name>SetFallbackFont</name></member>
+    <member refid="classvrv_1_1_resources_1aee770c98cbfe3fae1df70efbe651cf02" kind="function"><name>GetMusicFontForEmbedding</name></member>
+    <member refid="classvrv_1_1_resources_1a409a8b8fa58e506b4306bea9ec9b8446" kind="function"><name>SetFallbackFont</name></member>
     <member refid="classvrv_1_1_resources_1a01c062ee9a55162a4eb32df48db3eb81" kind="function"><name>GetFallbackFont</name></member>
-    <member refid="classvrv_1_1_resources_1afb853e55da58afb39639efa801c22651" kind="function"><name>SetCurrentFont</name></member>
+    <member refid="classvrv_1_1_resources_1acb541a3c9bbfbaef73bc97e1d1496fc4" kind="function"><name>SetCurrentFont</name></member>
     <member refid="classvrv_1_1_resources_1ad177a4bd037d8791f0552cc710de96c9" kind="function"><name>GetCurrentFont</name></member>
     <member refid="classvrv_1_1_resources_1a032385c5e9c000508bf52394f560b72e" kind="function"><name>IsFontLoaded</name></member>
     <member refid="classvrv_1_1_resources_1a73f8553831bc7f5b9549273831435e8c" kind="function"><name>GetGlyph</name></member>
+    <member refid="classvrv_1_1_resources_1ae8d75f314a9d0c945a44a27104d2e740" kind="function"><name>GetGlyph</name></member>
     <member refid="classvrv_1_1_resources_1ab5bc7928b34f63c14de1229623cdac62" kind="function"><name>GetGlyph</name></member>
     <member refid="classvrv_1_1_resources_1acabfaea592f8211df74611fffdc9a682" kind="function"><name>GetGlyphCode</name></member>
-    <member refid="classvrv_1_1_resources_1ae451033365fb7e79b728be77f3ebd7aa" kind="function"><name>SelectTextFont</name></member>
-    <member refid="classvrv_1_1_resources_1a1f7f592b285caa4823b4995f14b444b9" kind="function"><name>GetTextGlyph</name></member>
-    <member refid="classvrv_1_1_resources_1a0f1c2272251fcf14cd8b7f8dc30e1f07" kind="function"><name>FontHasGlyphAvailable</name></member>
-    <member refid="classvrv_1_1_resources_1a70b43d51304eaa6165edfa5a46e40bcf" kind="typedef"><name>StyleAttributes</name></member>
-    <member refid="classvrv_1_1_resources_1a505983d35f81c7af2f78fb2739f89207" kind="typedef"><name>GlyphTable</name></member>
-    <member refid="classvrv_1_1_resources_1a3ce6be92b62b53671763e0fcdc6d0ec1" kind="typedef"><name>GlyphNameTable</name></member>
-    <member refid="classvrv_1_1_resources_1a6b12162a60479843638aeb9f2ce939b4" kind="typedef"><name>GlyphTextMap</name></member>
-    <member refid="classvrv_1_1_resources_1aa944a005a2184ba6209dca0751f93aed" kind="variable"><name>m_useLiberation</name></member>
-    <member refid="classvrv_1_1_resources_1a3a664ee3b7608fe446797623eac4fcc0" kind="variable"><name>m_path</name></member>
-    <member refid="classvrv_1_1_resources_1ab57ccdaa3df2b6c0376dba6b6aaa3c47" kind="variable"><name>m_defaultFontName</name></member>
-    <member refid="classvrv_1_1_resources_1ab354c6e8bd561d12971aa1406c1d66d0" kind="variable"><name>m_fallbackFontName</name></member>
-    <member refid="classvrv_1_1_resources_1aa54d0454f32e545500c2b88dd6c0e66b" kind="variable"><name>m_loadedFonts</name></member>
-    <member refid="classvrv_1_1_resources_1a9abb593528d018db9996277952bd69c5" kind="variable"><name>m_currentFontName</name></member>
-    <member refid="classvrv_1_1_resources_1a65089b88930f2aec9cec2ce74caf1aea" kind="variable"><name>m_textFont</name></member>
-    <member refid="classvrv_1_1_resources_1a61a52ab8d6ed3cc694f1943bb6054036" kind="variable"><name>m_currentStyle</name></member>
-    <member refid="classvrv_1_1_resources_1a7835d2995b5e739464f156ae2c983439" kind="variable"><name>m_glyphNameTable</name></member>
-    <member refid="classvrv_1_1_resources_1ae59e697fc766326740c9673005312201" kind="variable"><name>m_cachedGlyph</name></member>
-    <member refid="classvrv_1_1_resources_1a719c63d8a8039823a78387340ca69aeb" kind="variable"><name>s_defaultPath</name></member>
-    <member refid="classvrv_1_1_resources_1aff9ebc78f90ff388fbc64a7cad7a5790" kind="variable"><name>k_defaultStyle</name></member>
-    <member refid="classvrv_1_1_resources_1ab2c9f323ba47fad214f37f9aad3d9525" kind="function"><name>Ok</name></member>
-    <member refid="classvrv_1_1_resources_1ab2b6f36c4af802d7f57f36cae6ff00f4" kind="function"><name>UseLiberationTextFont</name></member>
-    <member refid="classvrv_1_1_resources_1a6e39a7adf460365b030a6289d0afc1e3" kind="function"><name>UseLiberationTextFont</name></member>
+    <member refid="classvrv_1_1_resources_1aaf964531cafbd060ee880761905bd883" kind="function"><name>SetTextFont</name></member>
     <member refid="classvrv_1_1_resources_1a0654f8ccad91d70405568790615b0a31" kind="function"><name>GetTextFont</name></member>
+    <member refid="classvrv_1_1_resources_1a26098bd41d366e53e16131dafa963f85" kind="function"><name>GetTextFontMetricEquivalent</name></member>
+    <member refid="classvrv_1_1_resources_1aa2a66f0794e991fcdbe73eca6cb077d7" kind="function"><name>ShapeText</name></member>
+    <member refid="classvrv_1_1_resources_1a12aeb84c57085e98051f9d7a82bf3869" kind="function"><name>GetTextAdvance</name></member>
+    <member refid="classvrv_1_1_resources_1a9bb7af5aae009ce92ffeb8d6eaa4f197" kind="function"><name>GetTextGlyph</name></member>
+    <member refid="classvrv_1_1_resources_1a6fd6d25c497adecf7846e6338ec37164" kind="function"><name>GetRuntimeGlyph</name></member>
+    <member refid="classvrv_1_1_resources_1a0f1c2272251fcf14cd8b7f8dc30e1f07" kind="function"><name>FontHasGlyphAvailable</name></member>
+    <member refid="classvrv_1_1_resources_1a3ce6be92b62b53671763e0fcdc6d0ec1" kind="typedef"><name>GlyphNameTable</name></member>
+    <member refid="classvrv_1_1_resources_1a7482d98e68c3cb934f2db30fc05e485b" kind="typedef"><name>FaceStyle</name></member>
+    <member refid="classvrv_1_1_resources_1a3a664ee3b7608fe446797623eac4fcc0" kind="variable"><name>m_path</name></member>
+    <member refid="classvrv_1_1_resources_1ab354c6e8bd561d12971aa1406c1d66d0" kind="variable"><name>m_fallbackFontName</name></member>
+    <member refid="classvrv_1_1_resources_1a9abb593528d018db9996277952bd69c5" kind="variable"><name>m_currentFontName</name></member>
+    <member refid="classvrv_1_1_resources_1a88fa8dddc1adf73a85ac3c707c6ff0ec" kind="variable"><name>m_textFontName</name></member>
+    <member refid="classvrv_1_1_resources_1ae59e697fc766326740c9673005312201" kind="variable"><name>m_cachedGlyph</name></member>
+    <member refid="classvrv_1_1_resources_1ae33d82f50feac827355f9b7b1c3e73df" kind="variable"><name>m_runtimeGlyphs</name></member>
+    <member refid="classvrv_1_1_resources_1aafe43cae8a67cd93fe5bf0cd7807edc8" kind="variable"><name>m_musicFontSubsets</name></member>
+    <member refid="classvrv_1_1_resources_1a0b9b6996bf7da4265bbd503e6b244f79" kind="variable"><name>m_fontStore</name></member>
+    <member refid="classvrv_1_1_resources_1a719c63d8a8039823a78387340ca69aeb" kind="variable"><name>s_defaultPath</name></member>
+    <member refid="classvrv_1_1_resources_1ab2c9f323ba47fad214f37f9aad3d9525" kind="function"><name>Ok</name></member>
     <member refid="classvrv_1_1_resources_1a429bb8fd6635c36a657f5a09c1572ed6" kind="function"><name>IsSmuflFallbackNeeded</name></member>
-    <member refid="classvrv_1_1_resources_1a9859292deedcc9780ce51a1b6119bf41" kind="function"><name>IsCurrentFontFallback</name></member>
-    <member refid="classvrv_1_1_resources_1a5956754faab53214f2cae96d8cf9ce68" kind="function"><name>GetCSSFontFor</name></member>
-    <member refid="classvrv_1_1_resources_1a1fd9a6a8a2db85b961bad2cb92df1c5c" kind="function"><name>GetCustomFontname</name></member>
     <member refid="classvrv_1_1_resources_1a0d5e5aa5e0c55823ac823e00dd8445b8" kind="function"><name>GetSmuflGlyphForUnicodeChar</name></member>
-    <member refid="classvrv_1_1_resources_1a60969bd603f9f96aa8d29c16617c36e8" kind="function"><name>LoadFont</name></member>
-    <member refid="classvrv_1_1_resources_1a6ef49babf9c905abf67e9476570a9ba3" kind="function"><name>InitTextFont</name></member>
-    <member refid="classvrv_1_1_resources_1a72dbaca870cf602e9caa7b6ca34e1951" kind="function"><name>GetCurrentGlyphTable</name></member>
-    <member refid="classvrv_1_1_resources_1aa3a43b8298e86075825e81c7d3cf1c9e" kind="function"><name>GetFallbackGlyphTable</name></member>
+    <member refid="classvrv_1_1_resources_1a2d482b680513df61762009807d8f6b19" kind="function"><name>GetFaceStyle</name></member>
+    <member refid="classvrv_1_1_resources_1a9bdf2a918a83b56810e4d58f731c8a0d" kind="function"><name>FindSmuflMetadata</name></member>
   </compound>
   <compound refid="classvrv_1_1_rest" kind="class"><name>vrv::Rest</name>
     <member refid="classvrv_1_1_rest_1ad8a64c3e9cfc62e320078659d59fc67c" kind="function"><name>Rest</name></member>
@@ -9078,6 +9138,7 @@
     <member refid="classvrv_1_1_score_def_interface_1add4e6386611b3820c1ab122e0295f6e3" kind="function"><name>~ScoreDefInterface</name></member>
     <member refid="classvrv_1_1_score_def_interface_1a18894cce558b97f738253e4dd05cf3c2" kind="function"><name>Reset</name></member>
     <member refid="classvrv_1_1_score_def_interface_1aaa4843bcd84822b7401990c55d6735d2" kind="function"><name>IsInterface</name></member>
+    <member refid="classvrv_1_1_score_def_interface_1a5e757a1f26916ea9978f5737e183ed2a" kind="function"><name>MergeTextStyles</name></member>
   </compound>
   <compound refid="classvrv_1_1_score_def_optimize_functor" kind="class"><name>vrv::ScoreDefOptimizeFunctor</name>
     <member refid="classvrv_1_1_score_def_optimize_functor_1af071203531946506dd05ef29c6fa0184" kind="function"><name>ScoreDefOptimizeFunctor</name></member>
@@ -9281,6 +9342,13 @@
     <member refid="classvrv_1_1_set_staff_def_redraw_flags_functor_1a7bbf3358bd8423deb8491f9aca9a252c" kind="function"><name>VisitStaffDef</name></member>
     <member refid="classvrv_1_1_set_staff_def_redraw_flags_functor_1aa4c221c33d34e8be0d4c950d71a02127" kind="variable"><name>m_redrawFlags</name></member>
     <member refid="classvrv_1_1_set_staff_def_redraw_flags_functor_1a0e56d2c32dd56bae71de88c31ada766d" kind="function"><name>ImplementsEndInterface</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_font_store_1_1_shaped_run" kind="struct"><name>vrv::FontStore::ShapedRun</name>
+    <member refid="structvrv_1_1_font_store_1_1_shaped_run_1a29f250cedd97045da4613aa8067b44fc" kind="variable"><name>m_face</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_shaped_run_1a75c61e943cf994d2f63a0bef2d59ca63" kind="variable"><name>m_unitsPerEm</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_shaped_run_1a66c80a869f2ebb33b970651a5ebabb60" kind="variable"><name>m_glyphs</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_shaped_run_1ad77000d246daee9a0fc4cbde684cf368" kind="function"><name>operator==</name></member>
+    <member refid="structvrv_1_1_font_store_1_1_shaped_run_1a4c0b8405be12cdbe156bfae2629a9971" kind="function"><name>GetClusterGapCount</name></member>
   </compound>
   <compound refid="classvrv_1_1_sic" kind="class"><name>vrv::Sic</name>
     <member refid="classvrv_1_1_sic_1af74ed859c1135808c2dd34e30de56aa2" kind="function"><name>Sic</name></member>
@@ -9815,6 +9883,9 @@
     <member refid="classvrv_1_1_svg_device_context_1ae8ccd1ac1be92568a27e76a4c1e3e5ac" kind="function"><name>AppendStrokeLineCap</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a5acf2f6b77c54c0ad6dc57f1a6aab206" kind="function"><name>AppendStrokeLineJoin</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a396f5dbd47acc0900cc12b6afec02408" kind="function"><name>AppendStrokeDashArray</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a9d2e282acbbe5d87c2440477090d2a80" kind="function"><name>DrawTextAsTspan</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a1804ebbd42fb8211901c565576104f46" kind="function"><name>DrawTextAsPaths</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a0f325fcdaacc5a3f778cc80060d41697" kind="function"><name>FinishTextLine</name></member>
     <member refid="classvrv_1_1_svg_device_context_1af84feb2682aac7ee6fce6f4fe847ed61" kind="variable"><name>m_vrvTextFont</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a09123acea6322a086d28186023186600" kind="variable"><name>m_vrvTextFontFallback</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a2f1fa4c78eafb0e13e1b7977dc7e0955" kind="variable"><name>m_outdata</name></member>
@@ -9822,6 +9893,12 @@
     <member refid="classvrv_1_1_svg_device_context_1a607b8c5c9764ded03c3c4289eee5eb41" kind="variable"><name>m_originX</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ac6160e09f01b8dc6c63e38436e58cb8f" kind="variable"><name>m_originY</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a1f5cfe815974f2fc2a847ae700cb1b32" kind="variable"><name>m_textY</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1ab4e044e2e4c9c0cd7333aabb6e4dac2d" kind="variable"><name>m_textFontFaces</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a3ce0387fd9f1fabe27422b2c0bd93214" kind="variable"><name>m_textCursorX</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a47eff5d8353d5b636e1be09305e892f1" kind="variable"><name>m_textCursorY</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a6b16711546ac5d5a752d044a8d1bad5f" kind="variable"><name>m_textLineWidth</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1afb9a7ad2526788102cafefb31b124213" kind="variable"><name>m_textAlignment</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a1dba36c24e206c83c064b2c84f30b7a5" kind="variable"><name>m_textLineNode</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a314938d5ead841249007bd5c8b0e5549" kind="variable"><name>m_smuflGlyphs</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ab64ad09f8bc1f99122d16261c787d808" kind="variable"><name>m_glyphCodeFontCounter</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ab1774bf1ce232d707d57432cf32a552c" kind="variable"><name>m_svgDoc</name></member>
@@ -9832,7 +9909,6 @@
     <member refid="classvrv_1_1_svg_device_context_1a0c4a124f95be1529a2d6392253c70023" kind="variable"><name>m_mmOutput</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ae076153409413acb47bb96c956887c94" kind="variable"><name>m_showHidden</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a89043a67354672f664125a38335bb1a7" kind="variable"><name>m_facsimile</name></member>
-    <member refid="classvrv_1_1_svg_device_context_1a1c1d608fa0fdc30475554b89a0c7a5b5" kind="variable"><name>m_useLiberation</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aeecbb65f37519370932e63cd3bfffe4b" kind="variable"><name>m_svgBoundingBoxes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ab12ac974a85bad184611cd9279a9fb7a" kind="variable"><name>m_svgContentBoundingBoxes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ac937080a5abb2279d25546948b8d4e15" kind="variable"><name>m_textBoundingBoxNodes</name></member>
@@ -9845,6 +9921,8 @@
     <member refid="classvrv_1_1_svg_device_context_1ad6f5e5e9d2f6a58a113c1ffd4d2beccd" kind="variable"><name>m_indent</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a95699ee3b09839de430a3c546d03c12f" kind="variable"><name>m_glyphPostfixId</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a4cc67c7989c254ae30aa2a9955217267" kind="variable"><name>m_smuflTextFont</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a45287b1356a8ac6944a78096ef083b25" kind="variable"><name>m_textEmbedFont</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a103a0745d2b08c0214d72930965612a1" kind="variable"><name>m_textAsPaths</name></member>
     <member refid="classvrv_1_1_svg_device_context_1afee663261898ba2445f1482ed73ce470" kind="variable"><name>m_docId</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ab0a402361306d2957ab9be9ba2c24393" kind="function"><name>ApplyOffset</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ae747f2e0c21d2d1d777e8c429a909649" kind="function"><name>SetCustomGraphicColor</name></member>
@@ -9852,11 +9930,11 @@
     <member refid="classvrv_1_1_svg_device_context_1aa978c5f1995e03c72f491407086894eb" kind="function"><name>AppendIdAndClass</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a2f56ce603bd94fea5f23d21fa7117799" kind="function"><name>AppendAdditionalAttributes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a9982cebfe646f247292b295840b7bb94" kind="function"><name>UseGlobalStyling</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a91818dc3adf0df0716443849df390966" kind="function"><name>UseGlobalTextStyling</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a57ff509fb8c71c3fd48092ba269cc159" kind="function"><name>SetMMOutput</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a8b65f0e3f8f263b8c2d241e602c085f8" kind="function"><name>SetFacsimile</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aa924b39defc555046d658c2abe70d0d9" kind="function"><name>GetFacsimile</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ace2cce516db295705b684cb761d1abf8" kind="function"><name>SetShowHidden</name></member>
-    <member refid="classvrv_1_1_svg_device_context_1a5c2758eb5a508b7ff8c7b359bd1f77e5" kind="function"><name>SetUseLiberation</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ae59f5620c868167fef4915c0dfe30618" kind="function"><name>SetSvgBoundingBoxes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a1c297f45536115b38383cff255fa1c5a" kind="function"><name>SetSvgContentBoundingBoxes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a257b967c96a5cb94022707269a92e2f4" kind="function"><name>SetSvgViewBox</name></member>
@@ -9867,19 +9945,24 @@
     <member refid="classvrv_1_1_svg_device_context_1a25f3ff45496487556c367df1f167819c" kind="function"><name>SetCss</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aa8aeaa9724dec8881fb302854c98b519" kind="function"><name>SetAdditionalAttributes</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a278107f59bd0aa308352e1319fa05161" kind="function"><name>SetSmuflTextFont</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a2b329795c6187baeeddc831782e1918e" kind="function"><name>SetTextEmbedFont</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a606793969633cdac6c7fc30ee530d6e1" kind="function"><name>SetTextAsPaths</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a98b9adbbd2c5998c9e219fbc51a89700" kind="function"><name>CopyFileToStream</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a9c5ad4036cfe9cefc1e9cedd34eefd96" kind="function"><name>DrawSvgBoundingBox</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a7edfbbfa776e4beff65e4b0d04911b13" kind="function"><name>StartBoundingBoxGraphic</name></member>
     <member refid="classvrv_1_1_svg_device_context_1ad54ccf427dc297c450a39ae1bbf3ddf4" kind="function"><name>DrawSvgBoundingBoxRectangle</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a7abe1801d138c3b4c28bf0df55c27f1c" kind="function"><name>VrvTextFont</name></member>
     <member refid="classvrv_1_1_svg_device_context_1acd44e950a2c3446f70a4a13cc90eb17d" kind="function"><name>VrvTextFontFallback</name></member>
-    <member refid="classvrv_1_1_svg_device_context_1aadb63bf11317e6153369ef3baffc8df6" kind="function"><name>IncludeTextFont</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1ada36594a6b6559e3539676b7a59946c6" kind="function"><name>IncludeMusicTextFont</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1a97411121152fedc75369481a7be4446e" kind="function"><name>IncludeTextFontFaces</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1adbac6a0ca1a7bcc96a233df806db25e7" kind="function"><name>AppendFontFace</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a3e68dbf24a6bf3cbb8abafca27d8119e" kind="function"><name>Commit</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a35c5c359ed81608d498925ce4a5e43a4" kind="function"><name>WriteLine</name></member>
     <member refid="classvrv_1_1_svg_device_context_1aff192181dab1d95ee1e813621281544b" kind="function"><name>GetColor</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a1f95cd2ecaf74197c2c254e71e5b04d6" kind="function"><name>AddChild</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a82c9426e6a25b8a9dac3867158e458b1" kind="function"><name>PrefixCssRules</name></member>
     <member refid="classvrv_1_1_svg_device_context_1a142b148695f42496a64e951843ee4adc" kind="function"><name>InsertGlyphRef</name></member>
+    <member refid="classvrv_1_1_svg_device_context_1aaf90b9ddf1e29538508e8fb4a3b8d2d4" kind="function"><name>IsInFontFamilyList</name></member>
   </compound>
   <compound refid="classvrv_1_1_syl" kind="class"><name>vrv::Syl</name>
     <member refid="classvrv_1_1_syl_1a9cba9ac9d44ff3e7481616159f125a2a" kind="function"><name>Syl</name></member>
@@ -9907,6 +9990,7 @@
     <member refid="classvrv_1_1_syl_1a6550dbe83c89d4e5091a99471ded5428" kind="function"><name>IsRelativeToStaff</name></member>
     <member refid="classvrv_1_1_syl_1a4201bcb1e8f5eb9725f9a1ca09235e8d" kind="function"><name>IsSupportedChild</name></member>
     <member refid="classvrv_1_1_syl_1aa54f049014e438aa49c670d5daafc07d" kind="function"><name>CalcHyphenLength</name></member>
+    <member refid="classvrv_1_1_syl_1ac05e258584b44a7a490d8cd7567e9a5f" kind="function"><name>GetDrawingFont</name></member>
     <member refid="classvrv_1_1_syl_1a66d380bb93bb0abd4afd78b21251bfc9" kind="function"><name>CalcConnectorSpacing</name></member>
     <member refid="classvrv_1_1_syl_1a927dd56459671262c408f9ce1e9ae0e2" kind="function"><name>GetDrawingWidth</name></member>
     <member refid="classvrv_1_1_syl_1a71acabc60c670d31993618d795d396b7" kind="function"><name>GetDrawingHeight</name></member>
@@ -10264,7 +10348,7 @@
     <member refid="classvrv_1_1_text_drawing_params_1a5559ee485fafc9f8d2afd7a2ea524084" kind="variable"><name>m_alignment</name></member>
     <member refid="classvrv_1_1_text_drawing_params_1a572160298d4ba44a31fb053a51338b9f" kind="variable"><name>m_pointSize</name></member>
     <member refid="classvrv_1_1_text_drawing_params_1a0e17e1acb3809f7b25053fc84f42d05c" kind="variable"><name>m_staffSize</name></member>
-    <member refid="classvrv_1_1_text_drawing_params_1ab1510969102800d1c3c9f8636de4c26a" kind="variable"><name>m_enclosedRend</name></member>
+    <member refid="classvrv_1_1_text_drawing_params_1ae91544ad2b03ce88e702f4c54e3e0491" kind="variable"><name>m_enclosedRend</name></member>
     <member refid="classvrv_1_1_text_drawing_params_1a4b7fc848edb16cdd7a5097f9428eaf5d" kind="variable"><name>m_enclose</name></member>
     <member refid="classvrv_1_1_text_drawing_params_1a10a3b7dace853f0e231a1b6164a54a3e" kind="variable"><name>m_textEnclose</name></member>
     <member refid="classvrv_1_1_text_drawing_params_1aff77c2f11c58194d050c5b9914e141ed" kind="function"><name>TextDrawingParams</name></member>
@@ -10287,6 +10371,11 @@
     <member refid="classvrv_1_1_text_element_1ad87e99754f7444aa3e0e8c5092b1546e" kind="function"><name>AcceptEnd</name></member>
     <member refid="classvrv_1_1_text_element_1a3a7d54c8122bcff678cdf12f8c31e874" kind="variable"><name>m_drawingYRel</name></member>
     <member refid="classvrv_1_1_text_element_1aefe86d64304504cebcb22fb313b54aed" kind="variable"><name>m_drawingXRel</name></member>
+  </compound>
+  <compound refid="structvrv_1_1_text_enclosure" kind="struct"><name>vrv::TextEnclosure</name>
+    <member refid="structvrv_1_1_text_enclosure_1a00863103da1824993a4edca9ea295c58" kind="variable"><name>m_element</name></member>
+    <member refid="structvrv_1_1_text_enclosure_1a764a2cc060c476d8195d7740b6b1001f" kind="variable"><name>m_fontBottom</name></member>
+    <member refid="structvrv_1_1_text_enclosure_1a0ff4d08b01329276c77d37a633ad6721" kind="variable"><name>m_fontTop</name></member>
   </compound>
   <compound refid="classvrv_1_1_text_extend" kind="class"><name>vrv::TextExtend</name>
     <member refid="classvrv_1_1_text_extend_1a8dfbf5ba55ca4de5eea686f1db10a8f5" kind="variable"><name>m_width</name></member>
@@ -10462,6 +10551,12 @@
     <member refid="classvrv_1_1_toolkit_1a9a08fd8e89da6c2c709eaae69e28b2b1" kind="function"><name>LoadData</name></member>
     <member refid="classvrv_1_1_toolkit_1aeae2ad736af0f0d436c9131745057556" kind="function"><name>LoadZipDataBase64</name></member>
     <member refid="classvrv_1_1_toolkit_1abf4167617faed8347a7da3291e927e05" kind="function"><name>LoadZipDataBuffer</name></member>
+    <member refid="classvrv_1_1_toolkit_1ab48d67b981a93a9b823123ffc079de4f" kind="function"><name>RegisterTextFont</name></member>
+    <member refid="classvrv_1_1_toolkit_1a863372cd96b3f0d9c5e55d4641934183" kind="function"><name>RegisterMusicFont</name></member>
+    <member refid="classvrv_1_1_toolkit_1a36d99f95b697bd2022bf4e21ab6b364e" kind="function"><name>RegisterTextFontBase64</name></member>
+    <member refid="classvrv_1_1_toolkit_1a006fedad11903c5cb2eefc8f46253994" kind="function"><name>RegisterMusicFontBase64</name></member>
+    <member refid="classvrv_1_1_toolkit_1a85e9b3522595bc67923987bbd3bb2eb7" kind="function"><name>RegisterTextFontFile</name></member>
+    <member refid="classvrv_1_1_toolkit_1a0c62a9c2319a69a301d1af121b6d3da1" kind="function"><name>RegisterMusicFontFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a00a6268261b17ac90ba802ea9780e2df" kind="function"><name>ValidatePAEFile</name></member>
     <member refid="classvrv_1_1_toolkit_1a7311cd71df650b10f1ce75e037b49268" kind="function"><name>ValidatePAE</name></member>
     <member refid="classvrv_1_1_toolkit_1af24ccae4968a35e71b5fd82b70ee086c" kind="function"><name>GetPageCount</name></member>
@@ -10535,6 +10630,7 @@
     <member refid="classvrv_1_1_toolkit_1a5dd3dfc0559da991281bdb82c3a2c79e" kind="variable"><name>m_cerrCaptured</name></member>
     <member refid="classvrv_1_1_toolkit_1ad2e8b62cd24ad9085df97ed5cdf1034a" kind="variable"><name>m_cerrOriginalBuf</name></member>
     <member refid="classvrv_1_1_toolkit_1a27512885b4cd196fd47cc4430fffeb76" kind="variable"><name>m_editorToolkit</name></member>
+    <member refid="classvrv_1_1_toolkit_1af4f366b03467c3763cf961d369e518b8" kind="variable"><name>m_fontLayoutInvalid</name></member>
     <member refid="classvrv_1_1_toolkit_1a95517ce80380b990a5e37c8e5bde8018" kind="variable"><name>m_runtimeClock</name></member>
     <member refid="classvrv_1_1_toolkit_1af139b70cab7a8189edeec53a0093e93d" kind="variable"><name>m_humdrumBuffer</name></member>
     <member refid="classvrv_1_1_toolkit_1a05feed813407bca32d82d34319f5185a" kind="function"><name>IdentifyInputFrom</name></member>
@@ -10545,6 +10641,9 @@
     <member refid="classvrv_1_1_toolkit_1af03d8520c77603ed893203b0fa5a8821" kind="function"><name>LoadData</name></member>
     <member refid="classvrv_1_1_toolkit_1aca51300ccd6adbd2dd3d039b678e340d" kind="function"><name>ResetMidiDoc</name></member>
     <member refid="classvrv_1_1_toolkit_1aa871f542892a4ea2ad8441dcd4fc6396" kind="function"><name>SetFont</name></member>
+    <member refid="classvrv_1_1_toolkit_1aa32e82775e44fe746fc9277e2da231e3" kind="function"><name>RegisterFontsFromOption</name></member>
+    <member refid="classvrv_1_1_toolkit_1a5a466cf578bc02a8643d8ee35cfd6f20" kind="function"><name>FontRegistered</name></member>
+    <member refid="classvrv_1_1_toolkit_1aed217c178c904eb13f1fd0cf7357df06" kind="function"><name>EnsureFontLayout</name></member>
     <member refid="classvrv_1_1_toolkit_1a8d00a1762ebe79c8d9021148017a2072" kind="function"><name>IsUTF16</name></member>
     <member refid="classvrv_1_1_toolkit_1ad4839601f6e6a10f32e8c843e1bacfb9" kind="function"><name>LoadUTF16File</name></member>
     <member refid="classvrv_1_1_toolkit_1aec4e3b3448e5d3312113310ab4a7031f" kind="function"><name>IsZip</name></member>
@@ -10924,7 +11023,7 @@
     <member refid="classvrv_1_1_view_1ab8ba55755f2da79c49cf6cf724aca18f" kind="function"><name>DrawPlaceholder</name></member>
     <member refid="classvrv_1_1_view_1abbd4a644feee18fa38d6b6036041f8e8" kind="function"><name>DrawDiv</name></member>
     <member refid="classvrv_1_1_view_1ad9217a906f0c2100805fd2bc27217c7f" kind="function"><name>DrawRunningElements</name></member>
-    <member refid="classvrv_1_1_view_1a06b5fcc65a0d1ae1a91befeebc72b984" kind="function"><name>DrawTextLayoutElement</name></member>
+    <member refid="classvrv_1_1_view_1a2e83babe37c7f59cfafc0a3bf1f90260" kind="function"><name>DrawTextLayoutElement</name></member>
     <member refid="classvrv_1_1_view_1a981adfebaaef85eb343817cf9cc41779" kind="function"><name>DrawSystemChildren</name></member>
     <member refid="classvrv_1_1_view_1a67afe613a42dbeb6a91796438bee7a91" kind="function"><name>DrawMeasureChildren</name></member>
     <member refid="classvrv_1_1_view_1a13da848d9092d64b3095458af90dacc0" kind="function"><name>DrawStaffChildren</name></member>
@@ -10985,12 +11084,12 @@
     <member refid="classvrv_1_1_view_1a3a60de1e948bd0e591ee2971457737ae" kind="function"><name>DrawTextEnclosure</name></member>
     <member refid="classvrv_1_1_view_1a40ebbe142ce17e46484b0c907e15d7df" kind="function"><name>DrawAcciaccaturaSlash</name></member>
     <member refid="classvrv_1_1_view_1a6497c22584cbfd87df72917d2d478450" kind="function"><name>DrawChordCluster</name></member>
-    <member refid="classvrv_1_1_view_1ac5ff1d58bfc74b8f801612a67af7b161" kind="function"><name>DrawClefEnclosing</name></member>
+    <member refid="classvrv_1_1_view_1a32dbfb02f3b0430e7c6ad05838f0d6f9" kind="function"><name>DrawClefEnclosing</name></member>
     <member refid="classvrv_1_1_view_1a70387b92c5fe4cabd2e91c3060949007" kind="function"><name>DrawDotsPart</name></member>
     <member refid="classvrv_1_1_view_1a71542cc6083cd292d5209a08755c7496" kind="function"><name>DrawKeySigCancellation</name></member>
     <member refid="classvrv_1_1_view_1ab40ecfb9329e680e51cc63081851f1cd" kind="function"><name>DrawKeyAccid</name></member>
     <member refid="classvrv_1_1_view_1aadbc6b836c9ad925a6bfd757d9efa02c" kind="function"><name>DrawMeterSig</name></member>
-    <member refid="classvrv_1_1_view_1ac63129548ebe61c6e334a56e05d5495d" kind="function"><name>DrawMeterSigFigures</name></member>
+    <member refid="classvrv_1_1_view_1ab5ef7b2a07a51f1a7ef40670b1ea8257" kind="function"><name>DrawMeterSigFigures</name></member>
     <member refid="classvrv_1_1_view_1ae3e1fd105a1fed0bcaf17f0ca80a8294" kind="function"><name>DrawMRptPart</name></member>
     <member refid="classvrv_1_1_view_1a92b21a1d1f8f14636eaeed766dd0eebd" kind="function"><name>DrawTextElement</name></member>
     <member refid="classvrv_1_1_view_1a8e6bcaec184c2f069e68c0a126511180" kind="function"><name>DrawFb</name></member>
@@ -11064,14 +11163,14 @@
     <member refid="classvrv_1_1_view_1abb746f9695fc784829d7047f53960cee" kind="function"><name>DrawObliqueLine</name></member>
     <member refid="classvrv_1_1_view_1a5cc9023c0c2a89c3f6f568e6b2dfdf47" kind="function"><name>DrawVerticalSegmentedLine</name></member>
     <member refid="classvrv_1_1_view_1a1030a9c20338a0079f17aabf135cdf23" kind="function"><name>DrawHorizontalSegmentedLine</name></member>
-    <member refid="classvrv_1_1_view_1a9bb00e0e212bc96374c34bba4d8343d4" kind="function"><name>DrawSmuflCode</name></member>
+    <member refid="classvrv_1_1_view_1af97cc80103ea1295dea086c30fd03312" kind="function"><name>DrawSmuflCode</name></member>
     <member refid="classvrv_1_1_view_1ab3e788087b7d4007d9976ba362271d97" kind="function"><name>DrawThickBezierCurve</name></member>
     <member refid="classvrv_1_1_view_1a3123533df5fa25531e132ba843cf22c0" kind="function"><name>DrawTextString</name></member>
     <member refid="classvrv_1_1_view_1a0532111ca33161c07345b578adab5616" kind="function"><name>DrawDirString</name></member>
     <member refid="classvrv_1_1_view_1aa0988083c2b09e9035cd9f4e9013966f" kind="function"><name>DrawDynamString</name></member>
     <member refid="classvrv_1_1_view_1a80d170238af6854b69400a71d4a18a36" kind="function"><name>DrawHarmString</name></member>
     <member refid="classvrv_1_1_view_1a9a46fc7af2c03e5a185c59b86cff8b70" kind="function"><name>DrawSmuflLine</name></member>
-    <member refid="classvrv_1_1_view_1a8447182a256c07330f1af5b709e52fab" kind="function"><name>DrawSmuflString</name></member>
+    <member refid="classvrv_1_1_view_1a0b84700b41afa4b436673ba57b18e374" kind="function"><name>DrawSmuflString</name></member>
     <member refid="classvrv_1_1_view_1acfcd52ca06f2b73759eee04a829566ed" kind="function"><name>DrawLyricString</name></member>
     <member refid="classvrv_1_1_view_1a9c5433e3e9f4bffd5594cf5c44c344e8" kind="function"><name>DrawNotFilledEllipse</name></member>
     <member refid="classvrv_1_1_view_1a5d7fe1e4eeaaecd22a796703ee9c630f" kind="function"><name>DrawFilledRectangle</name></member>
@@ -11319,9 +11418,6 @@
     <member refid="options_8h_1aea55d3aac283d6f3d56c636f5b089ad8ae46f5dbcac1b9a4d8099718aa19808f5" kind="enumvalue"><name>ELISION_narrow</name></member>
     <member refid="options_8h_1aea55d3aac283d6f3d56c636f5b089ad8aeb83892c6499ac69041f05ce611e02d1" kind="enumvalue"><name>ELISION_wide</name></member>
     <member refid="options_8h_1aea55d3aac283d6f3d56c636f5b089ad8ad32dafeeafe958ea98ec188ec70b254c" kind="enumvalue"><name>ELISION_unicode</name></member>
-    <member refid="options_8h_1a48b6ed2e604c5ccf727c1e1121ba82dd" kind="enum"><name>option_FONT_FALLBACK</name></member>
-    <member refid="options_8h_1a48b6ed2e604c5ccf727c1e1121ba82dda17b27f1acc56a14814312eebba3f624f" kind="enumvalue"><name>FONT_FALLBACK_Leipzig</name></member>
-    <member refid="options_8h_1a48b6ed2e604c5ccf727c1e1121ba82dda0f26b420de209e9c348a3d6e7ea4b492" kind="enumvalue"><name>FONT_FALLBACK_Bravura</name></member>
     <member refid="options_8h_1a40510dbe0c93f3722568e3481f78e6cf" kind="enum"><name>option_FOOTER</name></member>
     <member refid="options_8h_1a40510dbe0c93f3722568e3481f78e6cfa9235617bec78f859e664e1969db36527" kind="enumvalue"><name>FOOTER_none</name></member>
     <member refid="options_8h_1a40510dbe0c93f3722568e3481f78e6cfa1e1919b779af0e177fef2013fb9f69b9" kind="enumvalue"><name>FOOTER_auto</name></member>
@@ -12541,6 +12637,7 @@
     <member refid="vrv_8h_1a6d72123cd6ebf618e20b2b5d4a77c48a" kind="variable"><name>start</name></member>
     <member refid="devicecontext_8h_1aa7a3d40a86f678fede6d250054c41479" kind="function"><name>DegToRad</name></member>
     <member refid="devicecontext_8h_1a8ba867bbfc9b2beee09ec1b12304af24" kind="function"><name>RadToDeg</name></member>
+    <member refid="filereader_8h_1afc98f7d947483ae500c30c1aa0454771" kind="function"><name>InflateZlib</name></member>
     <member refid="toolkitdef_8h_1af3fd50d1376002d216e7174344dc13c1" kind="function"><name>SetDefaultResourcePath</name></member>
     <member refid="toolkitdef_8h_1ac7eb660fb98160c96f800652a99753f7" kind="function"><name>EnableLog</name></member>
     <member refid="toolkitdef_8h_1ae63e2395c0d566cf02732297325bfebd" kind="function"><name>EnableLogToBuffer</name></member>
@@ -12854,6 +12951,8 @@
   <compound refid="fing_8h" kind="file"><name>fing.h</name>
   </compound>
   <compound refid="floatingobject_8h" kind="file"><name>floatingobject.h</name>
+  </compound>
+  <compound refid="fontstore_8h" kind="file"><name>fontstore.h</name>
   </compound>
   <compound refid="fraction_8h" kind="file"><name>fraction.h</name>
   </compound>

@@ -109,6 +109,7 @@ var files_dup =
     [ "findlayerelementsfunctor.h", "findlayerelementsfunctor_8h_source.html", null ],
     [ "fing.h", "fing_8h_source.html", null ],
     [ "floatingobject.h", "floatingobject_8h_source.html", null ],
+    [ "fontstore.h", "fontstore_8h_source.html", null ],
     [ "fraction.h", "fraction_8h_source.html", null ],
     [ "ftrem.h", "ftrem_8h_source.html", null ],
     [ "functor.h", "functor_8h_source.html", null ],

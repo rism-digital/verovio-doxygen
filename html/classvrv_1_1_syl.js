@@ -10,6 +10,7 @@ var classvrv_1_1_syl =
     [ "CalcHyphenLength", "classvrv_1_1_syl.html#aa54f049014e438aa49c670d5daafc07d", null ],
     [ "Clone", "classvrv_1_1_syl.html#a49723265ec79b247fa9bf1b4a4f48195", null ],
     [ "GetClassName", "classvrv_1_1_syl.html#a0e306a177e586acba88026833a9fcc04", null ],
+    [ "GetDrawingFont", "classvrv_1_1_syl.html#ac05e258584b44a7a490d8cd7567e9a5f", null ],
     [ "GetDrawingHeight", "classvrv_1_1_syl.html#a71acabc60c670d31993618d795d396b7", null ],
     [ "GetDrawingTextInkBottom", "classvrv_1_1_syl.html#a318c839cc09995743ee94addc9d79981", null ],
     [ "GetDrawingTextInkTop", "classvrv_1_1_syl.html#a0131f2864a12c619d24ae1d6b5611b07", null ],

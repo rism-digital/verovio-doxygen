@@ -322,6 +322,328 @@
         </inbodydescription>
         <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="162" column="10"/>
       </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1ab48d67b981a93a9b823123ffc079de4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::RegisterTextFont</definition>
+        <argsstring>(const unsigned char *fontData, int fontLength, const std::string &amp;alias=&quot;&quot;)</argsstring>
+        <name>RegisterTextFont</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>fontData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fontLength</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Register a static OTF, TTF, WOFF, or WOFF2 text font from a byte buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fontData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fontLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the font data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional family name for the font (exact and case-sensitive); empty adds no alias </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The canonical family name, or an empty string on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="172" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a863372cd96b3f0d9c5e55d4641934183" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::RegisterMusicFont</definition>
+        <argsstring>(const unsigned char *fontData, int fontLength, const std::string &amp;smuflMetadataJson, const std::string &amp;alias=&quot;&quot;)</argsstring>
+        <name>RegisterMusicFont</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>fontData</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fontLength</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>smuflMetadataJson</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Register a static OTF, TTF, WOFF, or WOFF2 SMuFL music font from a byte buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fontData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fontLength</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The size of the font data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smuflMetadataJson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SMuFL font metadata as JSON </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional family name for the font (exact and case-sensitive); empty adds no alias </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The canonical family name, or an empty string on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="183" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a36d99f95b697bd2022bf4e21ab6b364e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::RegisterTextFontBase64</definition>
+        <argsstring>(const std::string &amp;data, const std::string &amp;alias=&quot;&quot;)</argsstring>
+        <name>RegisterTextFontBase64</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Register a static text font from base64-encoded font data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base64-encoded font data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional family name for the font (exact and case-sensitive); empty adds no alias </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The canonical family name, or an empty string on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="193" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a006fedad11903c5cb2eefc8f46253994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::RegisterMusicFontBase64</definition>
+        <argsstring>(const std::string &amp;data, const std::string &amp;smuflMetadataJson, const std::string &amp;alias=&quot;&quot;)</argsstring>
+        <name>RegisterMusicFontBase64</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>smuflMetadataJson</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Register a static SMuFL music font from base64-encoded font data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base64-encoded font data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smuflMetadataJson</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SMuFL font metadata as JSON </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional family name for the font (exact and case-sensitive); empty adds no alias </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The canonical family name, or an empty string on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="203" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a85e9b3522595bc67923987bbd3bb2eb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::RegisterTextFontFile</definition>
+        <argsstring>(const std::string &amp;filename, const std::string &amp;alias=&quot;&quot;)</argsstring>
+        <name>RegisterTextFontFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Register a static text font from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>nojs</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font filename </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional family name for the font (exact and case-sensitive); empty adds no alias </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The canonical family name, or an empty string on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="215" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a0c62a9c2319a69a301d1af121b6d3da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::RegisterMusicFontFile</definition>
+        <argsstring>(const std::string &amp;filename, const std::string &amp;smuflMetadataFilename, const std::string &amp;alias=&quot;&quot;)</argsstring>
+        <name>RegisterMusicFontFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>smuflMetadataFilename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>alias</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Register a static SMuFL music font and its metadata from files. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="remark"><para>nojs</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The font filename </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>smuflMetadataFilename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SMuFL metadata JSON filename </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>An additional family name for the font (exact and case-sensitive); empty adds no alias </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The canonical family name, or an empty string on failure </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="227" column="17"/>
+      </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a00a6268261b17ac90ba802ea9780e2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string vrv::Toolkit::ValidatePAEFile</definition>
@@ -353,7 +675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="174" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="240" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a7311cd71df650b10f1ce75e037b49268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -384,7 +706,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="187" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="253" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1af24ccae4968a35e71b5fd82b70ee086c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -402,7 +724,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="196" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="262" column="9"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -422,7 +744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="212" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="278" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a33570df5ac75d86628a7db641d83ec8b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -439,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="219" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="285" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a2ca1aa7fcc49d2b8b7717dec136c5e86" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -457,7 +779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="228" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="294" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a09c79a752dd0b9e752506d9bcf583ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -488,7 +810,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="238" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="304" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a96fbf91f6688a0d81886a4a25254dc25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -502,7 +824,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="243" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="309" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ade313a25a731e494eba87d3c4619cbad" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -524,7 +846,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="248" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="314" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a6e4f7fb5f2071f726e6f705c14a6ed21" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -538,7 +860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="253" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="319" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a53b48c97c58b0da6e6083193ebd966e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -570,7 +892,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="263" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="329" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a321e0a62f5f15b1c5cd522fb0e514d3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -589,7 +911,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="272" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="272" bodyend="272"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="338" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="338" bodyend="338"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1abbe738f9285b31845ea71cb322d9a581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -621,7 +943,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="282" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="348" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a765716f5361637b41914ee6b74e39ac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -653,7 +975,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="292" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="358" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1acd94a639c138408298c34bb41562ee6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -684,7 +1006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="304" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="370" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -717,7 +1039,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="321" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="387" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ab2c9f9cecbb6e3b498cb73c1d8c10fbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -734,7 +1056,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="328" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="394" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a82b0ec75b2e6d36cae2cbfdadd12ec7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -751,7 +1073,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="335" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="401" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -797,7 +1119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="356" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="422" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a07da382b8c69698f19ff7e3136fd0813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -841,7 +1163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="365" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="431" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a3ff0a3aa8deeef77c291d496ee0d2959" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -886,7 +1208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="376" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="442" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a24988e48cc901661fd4db03ec9f756e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -903,7 +1225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="383" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="449" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a298894afff860e0675f2ca3b199fda98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -935,7 +1257,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="393" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="459" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a572174dc1e44773a2ab83a0ac79b479c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -953,7 +1275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="402" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="468" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a4360e00f3093a9360bf231e3d7f48c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -986,7 +1308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="414" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="480" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1aa0005de91225b21a57bf09ef28ad5498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1017,7 +1339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="422" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="488" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a2766268f4c000fb97a5bc2e666c4f53e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1034,7 +1356,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="429" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="495" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a9b4d838a1d7256322a4f842877794905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1079,7 +1401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="440" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="506" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a58d5ff7b44f30721ca7c00bee87fdb83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1109,7 +1431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="449" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="515" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1129,7 +1451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="465" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="531" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1adf47bbe710d3902f241db376002f55cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1150,7 +1472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="472" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="538" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a8a411c7fe22ffb9df4be52b582af550e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1171,7 +1493,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="479" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="545" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a450b3242b1d69a50ea92dea935e5037f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1192,7 +1514,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="486" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="552" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ade214f7c4d835643aa13046d8ae000ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1224,7 +1546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="496" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="562" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1256,7 +1578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="516" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="582" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a0206f317ac7ebe3c61df606c8afcd4ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1301,7 +1623,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="527" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="593" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1335,7 +1657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="546" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="612" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a4618bafecb91784806f78751ea6b3f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1365,7 +1687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="554" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="620" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a234616d8b4ab54ec1b7efb79e5ae464d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1396,7 +1718,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="564" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="630" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1acde5671467b4de6cacd55e7e8be87e93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1427,7 +1749,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="574" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="640" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ab20d86aba8f534079fdf01dd72e97178" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1457,7 +1779,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="582" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="648" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1acbd4bf8bb87e10aa286034d8fe204469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1487,7 +1809,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="590" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="656" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ab29688374542c0d3fb3cf5007bd23ab2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1518,7 +1840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="600" column="9"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="666" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a1b7c6ef82b1ec90af16f8f32da24dd5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1549,7 +1871,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="610" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="676" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ad79d6ace65df36810f0d84e774aee05d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -1580,7 +1902,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="621" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="687" column="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1613,7 +1935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="639" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="705" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1aff4b4b830b5859bf07d19e8ca63d2335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1628,7 +1950,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="647" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="713" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1654,7 +1976,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="669" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="735" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga60b58e56aa730d920b18901d1b4d6a9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classvrv_1_1_options" kindref="compound">Options</ref> *</type>
@@ -1668,7 +1990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="676" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="676" bodyend="676"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="742" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="742" bodyend="742"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga7d77de8b102acd2f07f0fa23270f82a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1686,7 +2008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="683" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="749" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga409f7f6411678f02d7bc9a73be29c7d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1701,7 +2023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="692" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="758" column="16"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga942ab5856517907ea4f2082d9f35f532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1719,7 +2041,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="699" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="765" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga5ae3fb587d96567263bfebc1261ff4d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1737,7 +2059,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="706" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="772" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga11e13d1850cadf28b00a85fde655e133" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -1752,7 +2074,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="715" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="781" column="16"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1gae5a104614acc4edf6794abe71d027210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1766,7 +2088,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="722" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="788" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga92b5b63c8184f79a52d5d34764377979" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>FileFormat</type>
@@ -1783,7 +2105,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="731" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="731" bodyend="731"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="797" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="797" bodyend="797"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga48014e7f933b9b68a49d62aec16ff862" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>FileFormat</type>
@@ -1796,7 +2118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="736" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="736" bodyend="736"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="802" column="16" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="802" bodyend="802"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga80b1e5c4211c1f7972d55cf2e4cd6c16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1810,7 +2132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="742" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="808" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga028fa93d6698315a5f04ab96160a6a62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1823,7 +2145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="743" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="809" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1839,7 +2161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="752" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="818" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1ga4dc4ddc728a00b02e5bacac33e1769e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1852,7 +2174,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="753" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="819" column="10"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1gaff331abcba4d70c7e6ecc17d08df382c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -1865,7 +2187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="754" column="12"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="820" column="12"/>
       </memberdef>
       <memberdef kind="function" id="group__nodoc_1gabd5f684704d8e4736ea416e43cdc5827" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1878,7 +2200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="755" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="821" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -1893,7 +2215,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="828" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="828" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="900" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="900" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1a308a98315c470e7f7466c8c5e9439911" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_doc_selection" kindref="compound">DocSelection</ref></type>
@@ -1906,7 +2228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="829" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="829" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="901" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="901" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1a41a694f23fc26f10b27c56dccf0cec68" prot="protected" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_view" kindref="compound">View</ref></type>
@@ -1919,7 +2241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="830" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="830" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="902" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="902" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -1934,7 +2256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="833" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="833" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="905" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="905" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1a8f5060c2fec413147a6bde2fcd672565" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_options" kindref="compound">Options</ref> *</type>
@@ -1947,7 +2269,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="835" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="835" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="907" column="13" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="907" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1aa2dc0652c3641dc9e7000df9a3d7f0ed" prot="private" static="no" mutable="no">
         <type>std::optional&lt; std::locale &gt;</type>
@@ -1960,7 +2282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="837" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="837" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="909" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="909" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1ac0bd285a5155dd9737032d26edba729d" prot="private" static="no" mutable="no">
         <type>char *</type>
@@ -1974,7 +2296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="842" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="842" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="914" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="914" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1a5dd3dfc0559da991281bdb82c3a2c79e" prot="private" static="no" mutable="no">
         <type>std::stringstream</type>
@@ -1989,7 +2311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="848" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="848" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="920" column="23" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="920" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1ad2e8b62cd24ad9085df97ed5cdf1034a" prot="private" static="no" mutable="no">
         <type>std::streambuf *</type>
@@ -2004,7 +2326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="854" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="854" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="926" column="20" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="926" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1a27512885b4cd196fd47cc4430fffeb76" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_editor_toolkit" kindref="compound">EditorToolkit</ref> *</type>
@@ -2017,7 +2339,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="856" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="856" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="928" column="19" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="928" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_toolkit_1af4f366b03467c3763cf961d369e518b8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool vrv::Toolkit::m_fontLayoutInvalid</definition>
+        <argsstring></argsstring>
+        <name>m_fontLayoutInvalid</name>
+        <briefdescription>
+<para>Deferred invalidation when registered/selected fonts change after loading. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="931" column="10" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="931" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classvrv_1_1_toolkit_1a95517ce80380b990a5e37c8e5bde8018" prot="private" static="no" mutable="no">
         <type><ref refid="classvrv_1_1_runtime_clock" kindref="compound">RuntimeClock</ref> *</type>
@@ -2031,7 +2367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="860" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="860" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="935" column="18" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="935" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">
@@ -2046,7 +2382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="867" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="867" bodyend="-1"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="942" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="942" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -2066,7 +2402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="764" column="16"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="830" column="16"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ab9ba4f30abf5a45944e83926efad3294" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2088,7 +2424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="769" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="835" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a9621011e0b28c573d62c5412a8c886ec" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2102,7 +2438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="774" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="840" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a3fd248c628b6e25a38ac0cb8b3dcd9f7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2117,7 +2453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="780" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="846" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a3a00a9335de59deb1dd2785d5c944397" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2131,7 +2467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="785" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="851" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1af03d8520c77603ed893203b0fa5a8821" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2153,7 +2489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="790" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="856" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1aca51300ccd6adbd2dd3d039b678e340d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2167,7 +2503,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="795" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="861" column="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -2186,7 +2522,69 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="798" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="864" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1aa32e82775e44fe746fc9277e2da231e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool vrv::Toolkit::RegisterFontsFromOption</definition>
+        <argsstring>(const OptionArray &amp;option, FontStore::Kind kind, bool withAlias)</argsstring>
+        <name>RegisterFontsFromOption</name>
+        <param>
+          <type>const <ref refid="classvrv_1_1_option_array" kindref="compound">OptionArray</ref> &amp;</type>
+          <declname>option</declname>
+        </param>
+        <param>
+          <type>FontStore::Kind</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlias</declname>
+        </param>
+        <briefdescription>
+<para>Register the fonts of an option, given as FILE or as ALIAS=FILE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="866" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1a5a466cf578bc02a8643d8ee35cfd6f20" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string vrv::Toolkit::FontRegistered</definition>
+        <argsstring>(const std::string &amp;family, uint64_t previousGeneration)</argsstring>
+        <name>FontRegistered</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>family</declname>
+        </param>
+        <param>
+          <type>uint64_t</type>
+          <declname>previousGeneration</declname>
+        </param>
+        <briefdescription>
+<para>Invalidate the layout if a font registration changed the fonts and return the family. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="868" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_toolkit_1aed217c178c904eb13f1fd0cf7357df06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::Toolkit::EnsureFontLayout</definition>
+        <argsstring>()</argsstring>
+        <name>EnsureFontLayout</name>
+        <briefdescription>
+<para>Redo the layout if it was invalidated by a font registration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="870" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a8d00a1762ebe79c8d9021148017a2072" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2203,7 +2601,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="799" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="871" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ad4839601f6e6a10f32e8c843e1bacfb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2220,7 +2618,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="800" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="872" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1aec4e3b3448e5d3312113310ab4a7031f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2237,7 +2635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="801" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="873" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1a97084c343467959a1b8fb5d0edfdbc54" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2254,7 +2652,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="802" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="874" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1acd24044c6c9fe0e03ac72726a5ec330a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -2271,7 +2669,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="803" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="875" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1aad929203e47ba1fe415b1b989a31463d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2292,7 +2690,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="804" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="876" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1aebe87c2bdaa8388550be5529a1c72163" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>std::string</type>
@@ -2322,7 +2720,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="812" column="17"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="884" column="17"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1af112a3cbc40256368437433a1d3ea271" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2336,7 +2734,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="817" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="889" column="10"/>
       </memberdef>
       <memberdef kind="function" id="classvrv_1_1_toolkit_1ac54dcdac7517a3b11f9fef2001e9ac27" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2351,7 +2749,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="823" column="10"/>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="895" column="10"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -2359,28 +2757,28 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="45">
+      <node id="46">
         <label>vrv::Doc</label>
         <link refid="classvrv_1_1_doc"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="46" relation="usage">
+        <childnode refid="47" relation="usage">
           <edgelabel>m_focusRange</edgelabel>
         </childnode>
         <childnode refid="3" relation="usage">
           <edgelabel>m_selectionFollowing</edgelabel>
           <edgelabel>m_selectionPreceding</edgelabel>
         </childnode>
-        <childnode refid="48" relation="usage">
+        <childnode refid="49" relation="usage">
           <edgelabel>m_expansionMap</edgelabel>
         </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>vrv::PageElement</label>
         <link refid="classvrv_1_1_page_element"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="23" relation="public-inheritance">
         </childnode>
       </node>
       <node id="17">
@@ -2393,28 +2791,28 @@
         </childnode>
         <childnode refid="8" relation="public-inheritance">
         </childnode>
-        <childnode refid="22" relation="public-inheritance">
+        <childnode refid="23" relation="public-inheritance">
         </childnode>
       </node>
       <node id="12">
         <label>AttDurationRatio</label>
       </node>
-      <node id="29">
+      <node id="30">
         <label>vrv::ScoreOrPartElement</label>
         <link refid="classvrv_1_1_score_or_part_element"/>
-        <childnode refid="30" relation="public-inheritance">
-        </childnode>
         <childnode refid="31" relation="public-inheritance">
         </childnode>
-        <childnode refid="33" relation="public-inheritance">
+        <childnode refid="32" relation="public-inheritance">
         </childnode>
         <childnode refid="34" relation="public-inheritance">
         </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="39">
+      <node id="40">
         <label>vrv::OptionBool</label>
         <link refid="classvrv_1_1_option_bool"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
       <node id="21">
@@ -2423,10 +2821,10 @@
       <node id="10">
         <label>AttBarring</label>
       </node>
-      <node id="24">
+      <node id="25">
         <label>AttDistances</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>AttTyped</label>
       </node>
       <node id="5">
@@ -2462,89 +2860,94 @@
         </childnode>
         <childnode refid="21" relation="public-inheritance">
         </childnode>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>AttTuning</label>
       </node>
       <node id="9">
         <label>vrv::Interface</label>
         <link refid="classvrv_1_1_interface"/>
       </node>
+      <node id="22">
+        <label>AttTextStyle</label>
+      </node>
       <node id="16">
         <label>AttMmTempo</label>
       </node>
-      <node id="37">
+      <node id="38">
         <label>vrv::Option</label>
         <link refid="classvrv_1_1_option"/>
       </node>
       <node id="15">
         <label>AttMidiTempo</label>
       </node>
-      <node id="42">
+      <node id="43">
         <label>vrv::OptionString</label>
         <link refid="classvrv_1_1_option_string"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="47">
+      <node id="48">
         <label>vrv::Pages</label>
         <link refid="classvrv_1_1_pages"/>
         <childnode refid="4" relation="public-inheritance">
         </childnode>
-        <childnode refid="33" relation="public-inheritance">
-        </childnode>
         <childnode refid="34" relation="public-inheritance">
         </childnode>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>AttEndings</label>
       </node>
       <node id="20">
         <label>AttSpacing</label>
       </node>
-      <node id="40">
+      <node id="41">
         <label>vrv::OptionJson</label>
         <link refid="classvrv_1_1_option_json"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="43">
+      <node id="44">
         <label>vrv::OptionDbl</label>
         <link refid="classvrv_1_1_option_dbl"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="39">
         <label>vrv::OptionGrp</label>
         <link refid="classvrv_1_1_option_grp"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>vrv::PageMilestoneInterface</label>
         <link refid="classvrv_1_1_page_milestone_interface"/>
-        <childnode refid="32" relation="usage">
+        <childnode refid="33" relation="usage">
           <edgelabel>m_end</edgelabel>
         </childnode>
       </node>
       <node id="18">
         <label>AttOctaveDefault</label>
       </node>
-      <node id="35">
+      <node id="36">
         <label>vrv::Options</label>
         <link refid="classvrv_1_1_options"/>
-        <childnode refid="36" relation="usage">
+        <childnode refid="37" relation="usage">
           <edgelabel>m_breaks</edgelabel>
           <edgelabel>m_condense</edgelabel>
           <edgelabel>m_durationEquivalence</edgelabel>
-          <edgelabel>m_fontFallback</edgelabel>
           <edgelabel>m_footer</edgelabel>
           <edgelabel>m_header</edgelabel>
           <edgelabel>m_ligatureOblique</edgelabel>
           <edgelabel>m_lyricElision</edgelabel>
           <edgelabel>m_mensuralResponsiveView</edgelabel>
           <edgelabel>m_multiRestStyle</edgelabel>
+          <edgelabel>m_pedalStyle</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="38" relation="usage">
+        <childnode refid="39" relation="usage">
           <edgelabel>m_baseOptions</edgelabel>
           <edgelabel>m_deprecated</edgelabel>
           <edgelabel>m_elementMargins</edgelabel>
@@ -2557,7 +2960,7 @@
           <edgelabel>m_selectors</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="39" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>m_adjustPageHeight</edgelabel>
           <edgelabel>m_adjustPageWidth</edgelabel>
           <edgelabel>m_allPages</edgelabel>
@@ -2570,33 +2973,36 @@
           <edgelabel>m_convertAttributes</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="40" relation="usage">
+        <childnode refid="41" relation="usage">
           <edgelabel>m_engravingDefaults</edgelabel>
           <edgelabel>m_engravingDefaultsFile</edgelabel>
           <edgelabel>m_transposeMdiv</edgelabel>
         </childnode>
-        <childnode refid="41" relation="usage">
+        <childnode refid="42" relation="usage">
           <edgelabel>m_appXPathQuery</edgelabel>
           <edgelabel>m_choiceXPathQuery</edgelabel>
-          <edgelabel>m_fontAddCustom</edgelabel>
+          <edgelabel>m_fontAddMusic</edgelabel>
+          <edgelabel>m_fontAddMusicAs</edgelabel>
+          <edgelabel>m_fontAddText</edgelabel>
+          <edgelabel>m_fontAddTextAs</edgelabel>
           <edgelabel>m_handwrittenFont</edgelabel>
           <edgelabel>m_substXPathQuery</edgelabel>
           <edgelabel>m_svgAdditionalAttribute</edgelabel>
         </childnode>
-        <childnode refid="42" relation="usage">
+        <childnode refid="43" relation="usage">
           <edgelabel>m_expand</edgelabel>
           <edgelabel>m_font</edgelabel>
+          <edgelabel>m_fontFallback</edgelabel>
+          <edgelabel>m_fontText</edgelabel>
           <edgelabel>m_help</edgelabel>
           <edgelabel>m_inputFrom</edgelabel>
           <edgelabel>m_logLevel</edgelabel>
           <edgelabel>m_mdivXPathQuery</edgelabel>
           <edgelabel>m_midiTuningFile</edgelabel>
           <edgelabel>m_outfile</edgelabel>
-          <edgelabel>m_outputTo</edgelabel>
-          <edgelabel>m_resourcePath</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="43" relation="usage">
+        <childnode refid="44" relation="usage">
           <edgelabel>m_barLineSeparation</edgelabel>
           <edgelabel>m_barLineWidth</edgelabel>
           <edgelabel>m_beamMixedStemMin</edgelabel>
@@ -2609,7 +3015,7 @@
           <edgelabel>m_dashedBarLineDashLength</edgelabel>
           <edgelabel>...</edgelabel>
         </childnode>
-        <childnode refid="44" relation="usage">
+        <childnode refid="45" relation="usage">
           <edgelabel>m_beamMaxSlope</edgelabel>
           <edgelabel>m_gabcStaffLines</edgelabel>
           <edgelabel>m_measureMinWidth</edgelabel>
@@ -2629,26 +3035,26 @@
         <childnode refid="3" relation="usage">
           <edgelabel>m_currentPage</edgelabel>
         </childnode>
-        <childnode refid="35" relation="usage">
+        <childnode refid="36" relation="usage">
           <edgelabel>m_options</edgelabel>
         </childnode>
-        <childnode refid="45" relation="usage">
+        <childnode refid="46" relation="usage">
           <edgelabel>m_doc</edgelabel>
         </childnode>
         <childnode refid="6" relation="usage">
           <edgelabel>m_drawingScoreDef</edgelabel>
         </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>vrv::PageMilestoneEnd</label>
         <link refid="classvrv_1_1_page_milestone_end"/>
-        <childnode refid="30" relation="public-inheritance">
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>m_start</edgelabel>
         </childnode>
       </node>
-      <node id="48">
+      <node id="49">
         <label>vrv::ExpansionMap</label>
         <link refid="classvrv_1_1_expansion_map"/>
       </node>
@@ -2658,27 +3064,27 @@
         <childnode refid="2" relation="usage">
           <edgelabel>m_view</edgelabel>
         </childnode>
-        <childnode refid="45" relation="usage">
+        <childnode refid="46" relation="usage">
           <edgelabel>m_doc</edgelabel>
         </childnode>
-        <childnode refid="49" relation="usage">
+        <childnode refid="50" relation="usage">
           <edgelabel>m_docSelection</edgelabel>
         </childnode>
       </node>
-      <node id="49">
+      <node id="50">
         <label>vrv::DocSelection</label>
         <link refid="classvrv_1_1_doc_selection"/>
       </node>
-      <node id="46">
+      <node id="47">
         <label>vrv::PageRange</label>
         <link refid="classvrv_1_1_page_range"/>
-        <childnode refid="47" relation="public-inheritance">
+        <childnode refid="48" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="45">
         <label>vrv::OptionInt</label>
         <link refid="classvrv_1_1_option_int"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
       <node id="13">
@@ -2692,8 +3098,6 @@
         <link refid="classvrv_1_1_score_def"/>
         <childnode refid="7" relation="public-inheritance">
         </childnode>
-        <childnode refid="23" relation="public-inheritance">
-        </childnode>
         <childnode refid="24" relation="public-inheritance">
         </childnode>
         <childnode refid="25" relation="public-inheritance">
@@ -2704,23 +3108,25 @@
         </childnode>
         <childnode refid="28" relation="public-inheritance">
         </childnode>
-      </node>
-      <node id="36">
-        <label>vrv::OptionIntMap</label>
-        <link refid="classvrv_1_1_option_int_map"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="26">
+      <node id="37">
+        <label>vrv::OptionIntMap</label>
+        <link refid="classvrv_1_1_option_int_map"/>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
         <label>AttOptimization</label>
       </node>
       <node id="19">
         <label>AttPianoPedals</label>
       </node>
-      <node id="41">
+      <node id="42">
         <label>vrv::OptionArray</label>
         <link refid="classvrv_1_1_option_array"/>
-        <childnode refid="37" relation="public-inheritance">
+        <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
       <node id="4">
@@ -2732,7 +3138,7 @@
       <node id="14">
         <label>AttMeasureNumbers</label>
       </node>
-      <node id="23">
+      <node id="24">
         <label>vrv::ObjectListInterface</label>
         <link refid="classvrv_1_1_object_list_interface"/>
       </node>
@@ -2744,22 +3150,22 @@
         <childnode refid="6" relation="usage">
           <edgelabel>m_drawingScoreDef</edgelabel>
         </childnode>
-        <childnode refid="29" relation="usage">
+        <childnode refid="30" relation="usage">
           <edgelabel>m_score</edgelabel>
           <edgelabel>m_scoreEnd</edgelabel>
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>AttTimeBase</label>
       </node>
-      <node id="34">
+      <node id="35">
         <label>AttNNumberLike</label>
       </node>
-      <node id="33">
+      <node id="34">
         <label>AttLabelled</label>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="35" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="35" bodyend="868"/>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" line="35" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/toolkit.h" bodystart="35" bodyend="943"/>
     <listofallmembers>
       <member refid="group__nodoc_1gae5a104614acc4edf6794abe71d027210" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>ClearHumdrumBuffer</name></member>
       <member refid="classvrv_1_1_toolkit_1a8a411c7fe22ffb9df4be52b582af550e" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>ConvertHumdrumToHumdrum</name></member>
@@ -2768,6 +3174,8 @@
       <member refid="classvrv_1_1_toolkit_1a25adbe86763cca1c51603b9e4c4831f3" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>Edit</name></member>
       <member refid="classvrv_1_1_toolkit_1ab2c9f9cecbb6e3b498cb73c1d8c10fbb" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>EditResponse</name></member>
       <member refid="classvrv_1_1_toolkit_1a82b0ec75b2e6d36cae2cbfdadd12ec7d" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>EditStatus</name></member>
+      <member refid="classvrv_1_1_toolkit_1aed217c178c904eb13f1fd0cf7357df06" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>EnsureFontLayout</name></member>
+      <member refid="classvrv_1_1_toolkit_1a5a466cf578bc02a8643d8ee35cfd6f20" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>FontRegistered</name></member>
       <member refid="classvrv_1_1_toolkit_1a2ca1aa7fcc49d2b8b7717dec136c5e86" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetAvailableOptions</name></member>
       <member refid="classvrv_1_1_toolkit_1aad929203e47ba1fe415b1b989a31463d" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetClassIds</name></member>
       <member refid="group__nodoc_1ga409f7f6411678f02d7bc9a73be29c7d6" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>GetCString</name></member>
@@ -2820,6 +3228,7 @@
       <member refid="classvrv_1_1_toolkit_1a5e0a77331e07aefa6f9471a1bc34f185" prot="protected" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_doc</name></member>
       <member refid="classvrv_1_1_toolkit_1a308a98315c470e7f7466c8c5e9439911" prot="protected" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_docSelection</name></member>
       <member refid="classvrv_1_1_toolkit_1a27512885b4cd196fd47cc4430fffeb76" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_editorToolkit</name></member>
+      <member refid="classvrv_1_1_toolkit_1af4f366b03467c3763cf961d369e518b8" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_fontLayoutInvalid</name></member>
       <member refid="classvrv_1_1_toolkit_1af139b70cab7a8189edeec53a0093e93d" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_humdrumBuffer</name></member>
       <member refid="classvrv_1_1_toolkit_1a726447c37c69a8aea872239b965ba352" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_midiDoc</name></member>
       <member refid="classvrv_1_1_toolkit_1a8f5060c2fec413147a6bde2fcd672565" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>m_options</name></member>
@@ -2830,6 +3239,13 @@
       <member refid="classvrv_1_1_toolkit_1ab9ba4f30abf5a45944e83926efad3294" prot="protected" virt="non-virtual"><scope>vrv::Toolkit</scope><name>PrintOptionUsageOutput</name></member>
       <member refid="classvrv_1_1_toolkit_1acd2477cdd946bbc98936c00347ddf3af" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RedoLayout</name></member>
       <member refid="classvrv_1_1_toolkit_1aff4b4b830b5859bf07d19e8ca63d2335" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RedoPagePitchPosLayout</name></member>
+      <member refid="classvrv_1_1_toolkit_1aa32e82775e44fe746fc9277e2da231e3" prot="private" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterFontsFromOption</name></member>
+      <member refid="classvrv_1_1_toolkit_1a863372cd96b3f0d9c5e55d4641934183" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterMusicFont</name></member>
+      <member refid="classvrv_1_1_toolkit_1a006fedad11903c5cb2eefc8f46253994" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterMusicFontBase64</name></member>
+      <member refid="classvrv_1_1_toolkit_1a0c62a9c2319a69a301d1af121b6d3da1" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterMusicFontFile</name></member>
+      <member refid="classvrv_1_1_toolkit_1ab48d67b981a93a9b823123ffc079de4f" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterTextFont</name></member>
+      <member refid="classvrv_1_1_toolkit_1a36d99f95b697bd2022bf4e21ab6b364e" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterTextFontBase64</name></member>
+      <member refid="classvrv_1_1_toolkit_1a85e9b3522595bc67923987bbd3bb2eb7" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RegisterTextFontFile</name></member>
       <member refid="classvrv_1_1_toolkit_1ad211393138b2c6b8f0afd933c117a9a4" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RenderData</name></member>
       <member refid="group__nodoc_1gaa6f27919ec3642d4da89408f8143f51d" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RenderToDeviceContext</name></member>
       <member refid="classvrv_1_1_toolkit_1a2766268f4c000fb97a5bc2e666c4f53e" prot="public" virt="non-virtual"><scope>vrv::Toolkit</scope><name>RenderToExpansionMap</name></member>

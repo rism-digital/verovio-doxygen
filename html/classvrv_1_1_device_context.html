@@ -110,6 +110,10 @@ Inheritance diagram for vrv::DeviceContext:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a50044b797f183ccb01274eb5cc6bb4e8"><td class="memItemLeft" align="right" valign="top"><a id="a50044b797f183ccb01274eb5cc6bb4e8"></a>
+const <a class="el" href="classvrv_1_1_glyph.html">Glyph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a50044b797f183ccb01274eb5cc6bb4e8">GetMusicGlyph</a> (char32_t code) const</td></tr>
+<tr class="memdesc:a50044b797f183ccb01274eb5cc6bb4e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the glyph in the music font of the current font (or in the current music font if none) <br /></td></tr>
+<tr class="separator:a50044b797f183ccb01274eb5cc6bb4e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="memItemLeft" align="right" valign="top"><a id="a98b03a16d2a3ead9ac3d7e3bafe2490d"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#a98b03a16d2a3ead9ac3d7e3bafe2490d">DrawPlaceholder</a> (int x, int y)</td></tr>
 <tr class="memdesc:a98b03a16d2a3ead9ac3d7e3bafe2490d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Special method for forcing bounding boxes to be updated Used for invisible elements (e.g., &lt;space&gt;) that needs to be take into account in spacing. <br /></td></tr>
@@ -129,6 +133,9 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:afd76f01c9742de3d4a0446f905b1003b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">UseGlobalStyling</a> ()</td></tr>
 <tr class="memdesc:afd76f01c9742de3d4a0446f905b1003b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method indicating if default global styling is used.  <a href="classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b">More...</a><br /></td></tr>
 <tr class="separator:afd76f01c9742de3d4a0446f905b1003b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf646e9fdd2ae01f7983605892ebcabe"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_device_context.html#aaf646e9fdd2ae01f7983605892ebcabe">UseGlobalTextStyling</a> ()</td></tr>
+<tr class="memdesc:aaf646e9fdd2ae01f7983605892ebcabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method indicating if text styles (e.g., bold tempo) are left to the global styling.  <a href="classvrv_1_1_device_context.html#aaf646e9fdd2ae01f7983605892ebcabe">More...</a><br /></td></tr>
+<tr class="separator:aaf646e9fdd2ae01f7983605892ebcabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors, and other standard methods</div></td></tr>
 <tr class="memitem:ac93a258491871eefffa02697159f432f"><td class="memItemLeft" align="right" valign="top"><a id="ac93a258491871eefffa02697159f432f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>DeviceContext</b> ()</td></tr>
@@ -484,6 +491,36 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="aaf646e9fdd2ae01f7983605892ebcabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf646e9fdd2ae01f7983605892ebcabe">&#9670;&nbsp;</a></span>UseGlobalTextStyling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool vrv::DeviceContext::UseGlobalTextStyling </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method indicating if text styles (e.g., bold tempo) are left to the global styling. </p>
+<p>This requires the text to be output as text so that the styling applies to it. </p>
+
+<p>Reimplemented in <a class="el" href="classvrv_1_1_svg_device_context.html#a91818dc3adf0df0716443849df390966">vrv::SvgDeviceContext</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="devicecontext_8h_source.html">devicecontext.h</a></li>
 </ul>
@@ -493,7 +530,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_device_context.html">DeviceContext</a></li>
-    <li class="footer">Generated on Tue Nov 17 2026 10:53:34 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Tue Nov 17 2026 12:03:14 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

@@ -58,13 +58,15 @@ var classvrv_1_1_svg_device_context =
     [ "SetSvgBoundingBoxes", "classvrv_1_1_svg_device_context.html#ae59f5620c868167fef4915c0dfe30618", null ],
     [ "SetSvgContentBoundingBoxes", "classvrv_1_1_svg_device_context.html#a1c297f45536115b38383cff255fa1c5a", null ],
     [ "SetSvgViewBox", "classvrv_1_1_svg_device_context.html#a257b967c96a5cb94022707269a92e2f4", null ],
+    [ "SetTextAsPaths", "classvrv_1_1_svg_device_context.html#a606793969633cdac6c7fc30ee530d6e1", null ],
     [ "SetTextBackground", "classvrv_1_1_svg_device_context.html#acc066c9f753fe702c0f05f1729ea7876", null ],
+    [ "SetTextEmbedFont", "classvrv_1_1_svg_device_context.html#a2b329795c6187baeeddc831782e1918e", null ],
     [ "SetTextForeground", "classvrv_1_1_svg_device_context.html#a808bd2c543af0b56bc0ab0742c32e5db", null ],
-    [ "SetUseLiberation", "classvrv_1_1_svg_device_context.html#a5c2758eb5a508b7ff8c7b359bd1f77e5", null ],
     [ "StartCustomGraphic", "classvrv_1_1_svg_device_context.html#a8fd57d6656b607b95b96739bdfb6a128", null ],
     [ "StartGraphic", "classvrv_1_1_svg_device_context.html#af004f015646e8aaeb637504b932cf0cd", null ],
     [ "StartPage", "classvrv_1_1_svg_device_context.html#a25df7dabeece7afc21b9e35a3ab97710", null ],
     [ "StartText", "classvrv_1_1_svg_device_context.html#a56a3cfdba6f0b45523557c0d886db23c", null ],
     [ "StartTextGraphic", "classvrv_1_1_svg_device_context.html#ad4cd0f57880e1d39f4d27f2920855827", null ],
-    [ "UseGlobalStyling", "classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94", null ]
+    [ "UseGlobalStyling", "classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94", null ],
+    [ "UseGlobalTextStyling", "classvrv_1_1_svg_device_context.html#a91818dc3adf0df0716443849df390966", null ]
 ];

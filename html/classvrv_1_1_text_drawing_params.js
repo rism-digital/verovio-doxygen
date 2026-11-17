@@ -5,7 +5,7 @@ var classvrv_1_1_text_drawing_params =
     [ "m_actualWidth", "classvrv_1_1_text_drawing_params.html#a2ad5cbe7d15aa3ce8795504e6e1c5c98", null ],
     [ "m_alignment", "classvrv_1_1_text_drawing_params.html#a5559ee485fafc9f8d2afd7a2ea524084", null ],
     [ "m_enclose", "classvrv_1_1_text_drawing_params.html#a4b7fc848edb16cdd7a5097f9428eaf5d", null ],
-    [ "m_enclosedRend", "classvrv_1_1_text_drawing_params.html#ab1510969102800d1c3c9f8636de4c26a", null ],
+    [ "m_enclosedRend", "classvrv_1_1_text_drawing_params.html#ae91544ad2b03ce88e702f4c54e3e0491", null ],
     [ "m_explicitPosition", "classvrv_1_1_text_drawing_params.html#a17beec76bc8c5aa4caa6f372dc89c440", null ],
     [ "m_height", "classvrv_1_1_text_drawing_params.html#a6eeb3805750dd4cea472cf0c52beb81c", null ],
     [ "m_laidOut", "classvrv_1_1_text_drawing_params.html#a4c1bb2c4bc4d9b04971f544b51e44104", null ],
