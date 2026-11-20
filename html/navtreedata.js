@@ -73,15 +73,15 @@ var NAVTREEINDEX =
 "classvrv_1_1_pitch_inflection.html#a50b451a15c09712fe1b78dc0326ce209",
 "classvrv_1_1_prepare_timestamps_functor.html#a20c817923b7c9871ed3dd7e204d7b574",
 "classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290",
-"classvrv_1_1_score_def_set_ossia_functor.html#a4a64c414fa90fdb853b53a7956073c78",
-"classvrv_1_1_staff_alignment.html#a4e559368a27154149c0654d34b982cee",
-"classvrv_1_1_svg_device_context.html#a3e964a005f023ff73635593ac1288ca4",
-"classvrv_1_1_system_element.html#acebac20fafb4f25527b556cc5de6704f",
-"classvrv_1_1_time_spanning_interface.html#a78270c18cb7fb79b28816a62fbed5176",
-"classvrv_1_1_trill.html#aac8f7b5ad3a71ad17049bb78e0e5c137",
-"classvrv_1_1_view.html#a761b0f017e09396ebb6e1166dd587209",
-"functions_r.html",
-"structvrv_1_1_font_store_1_1_glyph_placement.html#af9a8b350f68736e44450f5cbf2bbed1f"
+"classvrv_1_1_score_def_set_ossia_functor.html#a37d870f0575e3ebb3c29879b8eed34a9",
+"classvrv_1_1_staff_alignment.html#a4bf0e7cbd5d6a5ee25e3e226983b483e",
+"classvrv_1_1_svg_device_context.html#a3d798973e011a86f18c476c85ef8d2d7",
+"classvrv_1_1_system_element.html#aa7a18d72a6a41165b2025a441789076b",
+"classvrv_1_1_time_spanning_interface.html#a72115fec5c8b177f926e2b5dc1f4bb01",
+"classvrv_1_1_trill.html#aa5ff9b7b859ac1a70872582f947bd9fe",
+"classvrv_1_1_view.html#a7442e45070c6074a07194549e5166d68",
+"functions_p.html",
+"structvrv_1_1_font_store_1_1_glyph_placement.html#ad986012e8a09f8e222ff6287618f2aee"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

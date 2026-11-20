@@ -1,5 +1,6 @@
 var NAVTREEINDEX27 =
 {
+"classvrv_1_1_score_def_set_ossia_functor.html#a37d870f0575e3ebb3c29879b8eed34a9":[1,0,0,400,4],
 "classvrv_1_1_score_def_set_ossia_functor.html#a4a64c414fa90fdb853b53a7956073c78":[1,0,0,400,9],
 "classvrv_1_1_score_def_set_ossia_functor.html#a4df50cdc157fa2616d234192a59b1af7":[1,0,0,400,5],
 "classvrv_1_1_score_def_set_ossia_functor.html#a566162e021aaa7dd86ba8bcfa1cd8b0f":[1,0,0,400,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX27 =
 "classvrv_1_1_staff_alignment.html#a3fdda508f142cf8b1ba6f63e1d07608a":[1,0,0,456,35],
 "classvrv_1_1_staff_alignment.html#a45c9254734f194b8625f2ecb835d2dbc":[1,0,0,456,17],
 "classvrv_1_1_staff_alignment.html#a46bbc916af3129153608f26d68f42f2d":[1,0,0,456,45],
-"classvrv_1_1_staff_alignment.html#a48f23821d3b4d1b8e5d480baf9a9c9df":[1,0,0,456,5],
-"classvrv_1_1_staff_alignment.html#a4bf0e7cbd5d6a5ee25e3e226983b483e":[1,0,0,456,61]
+"classvrv_1_1_staff_alignment.html#a48f23821d3b4d1b8e5d480baf9a9c9df":[1,0,0,456,5]
 };
