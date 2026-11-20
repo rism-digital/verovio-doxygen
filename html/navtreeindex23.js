@@ -1,5 +1,6 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_ossia.html#a48ee8485bf5f3adb6d190b077e3e764b":[1,0,0,327,20],
 "classvrv_1_1_ossia.html#a4a06c473146db3a042e8f14e3389d1fe":[1,0,0,327,10],
 "classvrv_1_1_ossia.html#a53d9d3709ec7fc0a250e6e41fa301eb1":[1,0,0,327,16],
 "classvrv_1_1_ossia.html#a54728f34a706243dc4b980183dde89fd":[1,0,0,327,28],
@@ -248,6 +249,5 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_pitch_inflection.html":[1,0,0,341],
 "classvrv_1_1_pitch_inflection.html#a08fd982295bded9e502cac20e59990f3":[1,0,0,341,11],
 "classvrv_1_1_pitch_inflection.html#a2b46bcce3c80ec446f77810bb4ced1fd":[1,0,0,341,6],
-"classvrv_1_1_pitch_inflection.html#a36358ab9483482f993b1990241ed250e":[1,0,0,341,9],
-"classvrv_1_1_pitch_inflection.html#a4340ff3ea14389e944ef95ff87a79ba7":[1,0,0,341,8]
+"classvrv_1_1_pitch_inflection.html#a36358ab9483482f993b1990241ed250e":[1,0,0,341,9]
 };

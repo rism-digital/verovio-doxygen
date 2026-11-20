@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"functions_o.html":[1,3,0,12],
 "functions_p.html":[1,3,0,13],
 "functions_r.html":[1,3,0,14],
 "functions_s.html":[1,3,0,15],
@@ -28,8 +29,8 @@ var NAVTREEINDEX34 =
 "group__nodoc.html#ga4dc4ddc728a00b02e5bacac33e1769e2":[1,0,0,443,72],
 "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[0,0,9],
 "group__nodoc.html#ga5ae3fb587d96567263bfebc1261ff4d9":[1,0,0,443,81],
-"group__nodoc.html#ga60b58e56aa730d920b18901d1b4d6a9a":[1,0,0,443,27],
 "group__nodoc.html#ga60b58e56aa730d920b18901d1b4d6a9a":[0,0,5],
+"group__nodoc.html#ga60b58e56aa730d920b18901d1b4d6a9a":[1,0,0,443,27],
 "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5":[1,0,0,443,80],
 "group__nodoc.html#ga7d77de8b102acd2f07f0fa23270f82a5":[0,0,8],
 "group__nodoc.html#ga80b1e5c4211c1f7972d55cf2e4cd6c16":[1,0,0,443,83],
@@ -41,8 +42,8 @@ var NAVTREEINDEX34 =
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[0,0,7],
 "group__nodoc.html#gaa6f27919ec3642d4da89408f8143f51d":[1,0,0,443,59],
 "group__nodoc.html#gabd5f684704d8e4736ea416e43cdc5827":[1,0,0,443,47],
-"group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,443,2],
 "group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[0,0,0],
+"group__nodoc.html#gae5a104614acc4edf6794abe71d027210":[1,0,0,443,2],
 "group__nodoc.html#gaff331abcba4d70c7e6ecc17d08df382c":[1,0,0,443,33],
 "grpsym_8h_source.html":[2,0,119],
 "hairpin_8h_source.html":[2,0,120],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "structvrv_1_1_font_store_1_1_glyph_placement.html#a51c6c55c73a122e35d2b0ae52b23f2bd":[1,0,0,205,5,2],
 "structvrv_1_1_font_store_1_1_glyph_placement.html#a748093d6b110053f6aed0f31edd3096f":[1,0,0,205,5,6],
 "structvrv_1_1_font_store_1_1_glyph_placement.html#a7935763266235a8cf8888d38edf5e520":[1,0,0,205,5,3],
-"structvrv_1_1_font_store_1_1_glyph_placement.html#a83882849c0f3f449dbb8ef42c0060f71":[1,0,0,205,5,7],
-"structvrv_1_1_font_store_1_1_glyph_placement.html#ab569d78f64a9b82e95f6082c15b253a7":[1,0,0,205,5,4]
+"structvrv_1_1_font_store_1_1_glyph_placement.html#a83882849c0f3f449dbb8ef42c0060f71":[1,0,0,205,5,7]
 };

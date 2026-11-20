@@ -153,6 +153,7 @@ var classvrv_1_1_options =
     [ "m_outputFormatRaw", "classvrv_1_1_options.html#a0c163026a35e6605cc3b21b10cec012a", null ],
     [ "m_outputIndent", "classvrv_1_1_options.html#a8365e7fb35a9e562b3b108b8b8c41588", null ],
     [ "m_outputIndentTab", "classvrv_1_1_options.html#a230a60d43b7bbf1db70e5e31c6a0b344", null ],
+    [ "m_outputReleaseSchema", "classvrv_1_1_options.html#a025891e62108cd20d5b4246edb9e4052", null ],
     [ "m_outputSmuflXmlEntities", "classvrv_1_1_options.html#a35a052f15304fa0bec0d694c91e2f74b", null ],
     [ "m_outputTo", "classvrv_1_1_options.html#a6625ce2ef1f927acc8cf3918d37d2037", null ],
     [ "m_outputToFormat", "classvrv_1_1_options.html#a3c0d08488253432a8c1bd045717ef822", null ],
