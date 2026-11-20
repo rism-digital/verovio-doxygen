@@ -226,6 +226,12 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memitem:a298894afff860e0675f2ca3b199fda98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a298894afff860e0675f2ca3b199fda98">RenderToMIDIFile</a> (const std::string &amp;filename)</td></tr>
 <tr class="memdesc:a298894afff860e0675f2ca3b199fda98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a document to MIDI and save it to the file.  <a href="classvrv_1_1_toolkit.html#a298894afff860e0675f2ca3b199fda98">More...</a><br /></td></tr>
 <tr class="separator:a298894afff860e0675f2ca3b199fda98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75fa5b2b97d2a6e67a55507872caca63"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a75fa5b2b97d2a6e67a55507872caca63">RenderToMIDIJson</a> ()</td></tr>
+<tr class="memdesc:a75fa5b2b97d2a6e67a55507872caca63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the document to MIDI as JSON.  <a href="classvrv_1_1_toolkit.html#a75fa5b2b97d2a6e67a55507872caca63">More...</a><br /></td></tr>
+<tr class="separator:a75fa5b2b97d2a6e67a55507872caca63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9663f5e31458ce254cdd35f323021ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#ad9663f5e31458ce254cdd35f323021ca">RenderToMIDIJsonFile</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:ad9663f5e31458ce254cdd35f323021ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the document to MIDI as JSON and save it to the file.  <a href="classvrv_1_1_toolkit.html#ad9663f5e31458ce254cdd35f323021ca">More...</a><br /></td></tr>
+<tr class="separator:ad9663f5e31458ce254cdd35f323021ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a572174dc1e44773a2ab83a0ac79b479c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_toolkit.html#a572174dc1e44773a2ab83a0ac79b479c">RenderToPAE</a> ()</td></tr>
 <tr class="memdesc:a572174dc1e44773a2ab83a0ac79b479c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a document to Plaine &amp; Easie code.  <a href="classvrv_1_1_toolkit.html#a572174dc1e44773a2ab83a0ac79b479c">More...</a><br /></td></tr>
 <tr class="separator:a572174dc1e44773a2ab83a0ac79b479c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1680,6 +1686,55 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a75fa5b2b97d2a6e67a55507872caca63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75fa5b2b97d2a6e67a55507872caca63">&#9670;&nbsp;</a></span>RenderToMIDIJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string vrv::Toolkit::RenderToMIDIJson </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render the document to MIDI as JSON. </p>
+<p>The structure is the one of @tonejs/midi (Midi.toJSON()) for the MIDI file of <a class="el" href="classvrv_1_1_toolkit.html#a24988e48cc901661fd4db03ec9f756e9" title="Render the document to MIDI.">RenderToMIDI()</a>, with the ID (@xml:id) of the note added to each note.</p>
+<dl class="section return"><dt>Returns</dt><dd>The MIDI JSON as a string </dd></dl>
+
+</div>
+</div>
+<a id="ad9663f5e31458ce254cdd35f323021ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9663f5e31458ce254cdd35f323021ca">&#9670;&nbsp;</a></span>RenderToMIDIJsonFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool vrv::Toolkit::RenderToMIDIJsonFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render the document to MIDI as JSON and save it to the file. </p>
+<dl class="section remark"><dt>Remarks</dt><dd>nojs</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>The output filename </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the file was successfully written </dd></dl>
+
+</div>
+</div>
 <a id="a572174dc1e44773a2ab83a0ac79b479c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a572174dc1e44773a2ab83a0ac79b479c">&#9670;&nbsp;</a></span>RenderToPAE()</h2>
 
@@ -2174,7 +2229,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_toolkit.html">Toolkit</a></li>
-    <li class="footer">Generated on Thu Nov 19 2026 12:15:59 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 20 2026 08:42:53 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

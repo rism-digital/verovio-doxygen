@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['object_2473',['Object',['../classvrv_1_1_object.html#a8be4ecf7908559751e728551718a8bfc',1,'vrv::Object']]],
-  ['ok_2474',['Ok',['../classvrv_1_1_resources.html#ab2c9f323ba47fad214f37f9aad3d9525',1,'vrv::Resources']]],
-  ['operator_25_2475',['operator%',['../classvrv_1_1_fraction.html#a4746e7e5cf311cefa26e228b26d8bceb',1,'vrv::Fraction']]],
-  ['operator_2a_2476',['operator*',['../classvrv_1_1_fraction.html#a5563d80988263170927b513eb38b8df9',1,'vrv::Fraction']]],
-  ['operator_2b_2477',['operator+',['../classvrv_1_1_fraction.html#a4c6a22ba45f016ba6371321abfd88372',1,'vrv::Fraction']]],
-  ['operator_2d_2478',['operator-',['../classvrv_1_1_fraction.html#a12f85b298c02a1e6abb9077061f7bc1d',1,'vrv::Fraction']]],
-  ['operator_2f_2479',['operator/',['../classvrv_1_1_fraction.html#a1639fe5f665decc11763d02b28a9d6a5',1,'vrv::Fraction']]],
-  ['operator_3c_3d_3e_2480',['operator&lt;=&gt;',['../classvrv_1_1_fraction.html#aa825086a75ec8228b03df6d1eac2d519',1,'vrv::Fraction']]],
-  ['operator_3d_2481',['operator=',['../classvrv_1_1_object.html#a6ad51ecc97faf69c8fa8432a780aed44',1,'vrv::Object']]],
-  ['operator_3d_3d_2482',['operator==',['../classvrv_1_1_fraction.html#a9e450d676d4ea8a47530ff23739ec702',1,'vrv::Fraction']]],
-  ['optionschanged_2483',['OptionsChanged',['../classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1',1,'vrv::EditorToolkit']]]
+  ['object_2483',['Object',['../classvrv_1_1_object.html#a8be4ecf7908559751e728551718a8bfc',1,'vrv::Object']]],
+  ['ok_2484',['Ok',['../classvrv_1_1_resources.html#ab2c9f323ba47fad214f37f9aad3d9525',1,'vrv::Resources']]],
+  ['operator_25_2485',['operator%',['../classvrv_1_1_fraction.html#a4746e7e5cf311cefa26e228b26d8bceb',1,'vrv::Fraction']]],
+  ['operator_2a_2486',['operator*',['../classvrv_1_1_fraction.html#a5563d80988263170927b513eb38b8df9',1,'vrv::Fraction']]],
+  ['operator_2b_2487',['operator+',['../classvrv_1_1_fraction.html#a4c6a22ba45f016ba6371321abfd88372',1,'vrv::Fraction']]],
+  ['operator_2d_2488',['operator-',['../classvrv_1_1_fraction.html#a12f85b298c02a1e6abb9077061f7bc1d',1,'vrv::Fraction']]],
+  ['operator_2f_2489',['operator/',['../classvrv_1_1_fraction.html#a1639fe5f665decc11763d02b28a9d6a5',1,'vrv::Fraction']]],
+  ['operator_3c_3d_3e_2490',['operator&lt;=&gt;',['../classvrv_1_1_fraction.html#aa825086a75ec8228b03df6d1eac2d519',1,'vrv::Fraction']]],
+  ['operator_3d_2491',['operator=',['../classvrv_1_1_object.html#a6ad51ecc97faf69c8fa8432a780aed44',1,'vrv::Object']]],
+  ['operator_3d_3d_2492',['operator==',['../classvrv_1_1_fraction.html#a9e450d676d4ea8a47530ff23739ec702',1,'vrv::Fraction']]],
+  ['optionschanged_2493',['OptionsChanged',['../classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1',1,'vrv::EditorToolkit']]]
 ];

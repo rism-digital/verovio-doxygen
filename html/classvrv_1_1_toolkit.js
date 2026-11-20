@@ -64,6 +64,8 @@ var classvrv_1_1_toolkit =
     [ "RenderToExpansionMapFile", "classvrv_1_1_toolkit.html#a58d5ff7b44f30721ca7c00bee87fdb83", null ],
     [ "RenderToMIDI", "classvrv_1_1_toolkit.html#a24988e48cc901661fd4db03ec9f756e9", null ],
     [ "RenderToMIDIFile", "classvrv_1_1_toolkit.html#a298894afff860e0675f2ca3b199fda98", null ],
+    [ "RenderToMIDIJson", "classvrv_1_1_toolkit.html#a75fa5b2b97d2a6e67a55507872caca63", null ],
+    [ "RenderToMIDIJsonFile", "classvrv_1_1_toolkit.html#ad9663f5e31458ce254cdd35f323021ca", null ],
     [ "RenderToPAE", "classvrv_1_1_toolkit.html#a572174dc1e44773a2ab83a0ac79b479c", null ],
     [ "RenderToPAEFile", "classvrv_1_1_toolkit.html#a4360e00f3093a9360bf231e3d7f48c5f", null ],
     [ "RenderToSVG", "classvrv_1_1_toolkit.html#a07da382b8c69698f19ff7e3136fd0813", null ],

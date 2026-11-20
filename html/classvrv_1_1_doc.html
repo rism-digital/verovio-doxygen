@@ -188,9 +188,9 @@ data_MEASUREMENTSIGNED&#160;</td><td class="memItemRight" valign="bottom"><a cla
 <tr class="memitem:ae0d680385b78c8ba2e1b84452ad27889"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#ae0d680385b78c8ba2e1b84452ad27889">HasTimemap</a> () const</td></tr>
 <tr class="memdesc:ae0d680385b78c8ba2e1b84452ad27889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if the timemap has already been calculated.  <a href="classvrv_1_1_doc.html#ae0d680385b78c8ba2e1b84452ad27889">More...</a><br /></td></tr>
 <tr class="separator:ae0d680385b78c8ba2e1b84452ad27889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b8be5eebe48afb3668ec97c133148a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">ExportMIDI</a> (smf::MidiFile *midiFile)</td></tr>
-<tr class="memdesc:a4b8be5eebe48afb3668ec97c133148a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the document to a MIDI file.  <a href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5">More...</a><br /></td></tr>
-<tr class="separator:a4b8be5eebe48afb3668ec97c133148a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fd9cb4a6ebcefba2c832266159ee3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#ae3fd9cb4a6ebcefba2c832266159ee3e">ExportMIDI</a> (smf::MidiFile *midiFile, std::string *midiJson=NULL)</td></tr>
+<tr class="memdesc:ae3fd9cb4a6ebcefba2c832266159ee3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the document to a MIDI file.  <a href="classvrv_1_1_doc.html#ae3fd9cb4a6ebcefba2c832266159ee3e">More...</a><br /></td></tr>
+<tr class="separator:ae3fd9cb4a6ebcefba2c832266159ee3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9632686d61ccb8de3814dd9c3028a19e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e">ExportTimemap</a> (std::string &amp;output, bool includeRests, bool includeMeasures, bool useFractions)</td></tr>
 <tr class="memdesc:a9632686d61ccb8de3814dd9c3028a19e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a timemap from the document to a JSON string.  <a href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e">More...</a><br /></td></tr>
 <tr class="separator:a9632686d61ccb8de3814dd9c3028a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1733,8 +1733,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 
 </div>
 </div>
-<a id="a4b8be5eebe48afb3668ec97c133148a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b8be5eebe48afb3668ec97c133148a5">&#9670;&nbsp;</a></span>ExportMIDI()</h2>
+<a id="ae3fd9cb4a6ebcefba2c832266159ee3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fd9cb4a6ebcefba2c832266159ee3e">&#9670;&nbsp;</a></span>ExportMIDI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1743,14 +1743,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
           <td class="memname">void vrv::Doc::ExportMIDI </td>
           <td>(</td>
           <td class="paramtype">smf::MidiFile *&#160;</td>
-          <td class="paramname"><em>midiFile</em></td><td>)</td>
+          <td class="paramname"><em>midiFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>midiJson</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Export the document to a MIDI file. </p>
-<p>Run trough all the layers and fill the MIDI file content. </p>
+<p>Run trough all the layers and fill the MIDI file content. If midiJson is given, the MIDI is also exported to it as JSON, with the structure of @tonejs/midi (Midi.toJSON()) and the ID of the note added to each note. </p>
 
 </div>
 </div>
@@ -1941,7 +1951,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 </div><div class="memdoc">
 
 <p>Check to see if the timemap has already been calculated. </p>
-<p>This needs to return true before <a class="el" href="classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5" title="Export the document to a MIDI file.">ExportMIDI()</a> or <a class="el" href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e" title="Extract a timemap from the document to a JSON string.">ExportTimemap()</a> can export anything (These two functions will automatically run <a class="el" href="classvrv_1_1_doc.html#a162e05164bbd41fefa38c12639f91c44" title="Prepare the timemap for MIDI and timemap file export.">CalculateTimemap()</a> if <a class="el" href="classvrv_1_1_doc.html#ae0d680385b78c8ba2e1b84452ad27889" title="Check to see if the timemap has already been calculated.">HasTimemap()</a> return false. </p>
+<p>This needs to return true before <a class="el" href="classvrv_1_1_doc.html#ae3fd9cb4a6ebcefba2c832266159ee3e" title="Export the document to a MIDI file.">ExportMIDI()</a> or <a class="el" href="classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e" title="Extract a timemap from the document to a JSON string.">ExportTimemap()</a> can export anything (These two functions will automatically run <a class="el" href="classvrv_1_1_doc.html#a162e05164bbd41fefa38c12639f91c44" title="Prepare the timemap for MIDI and timemap file export.">CalculateTimemap()</a> if <a class="el" href="classvrv_1_1_doc.html#ae0d680385b78c8ba2e1b84452ad27889" title="Check to see if the timemap has already been calculated.">HasTimemap()</a> return false. </p>
 
 </div>
 </div>
@@ -2162,7 +2172,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_cachedDrawingY</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_doc.html">Doc</a></li>
-    <li class="footer">Generated on Thu Nov 19 2026 12:15:56 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Fri Nov 20 2026 08:42:50 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>

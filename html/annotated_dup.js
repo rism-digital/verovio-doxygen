@@ -288,6 +288,7 @@ var annotated_dup =
       [ "GenerateMIDIFunctor", "classvrv_1_1_generate_m_i_d_i_functor.html", "classvrv_1_1_generate_m_i_d_i_functor" ],
       [ "GenerateTimemapFunctor", "classvrv_1_1_generate_timemap_functor.html", "classvrv_1_1_generate_timemap_functor" ],
       [ "GenerateFeaturesFunctor", "classvrv_1_1_generate_features_functor.html", "classvrv_1_1_generate_features_functor" ],
+      [ "MIDIJsonBuilder", "classvrv_1_1_m_i_d_i_json_builder.html", "classvrv_1_1_m_i_d_i_json_builder" ],
       [ "ApplyPPUFactorFunctor", "classvrv_1_1_apply_p_p_u_factor_functor.html", "classvrv_1_1_apply_p_p_u_factor_functor" ],
       [ "GetAlignmentLeftRightFunctor", "classvrv_1_1_get_alignment_left_right_functor.html", "classvrv_1_1_get_alignment_left_right_functor" ],
       [ "InitProcessingListsFunctor", "classvrv_1_1_init_processing_lists_functor.html", "classvrv_1_1_init_processing_lists_functor" ],

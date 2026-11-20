@@ -28,7 +28,7 @@ var classvrv_1_1_doc =
     [ "ExpandExpansions", "classvrv_1_1_doc.html#a69237ae834ae8fc6fc6b1255f0b1e2cc", null ],
     [ "ExportExpansionMap", "classvrv_1_1_doc.html#aff4b57776460fb8bb24eb8dcfc4fcdcf", null ],
     [ "ExportFeatures", "classvrv_1_1_doc.html#a6e47232f8eef26473e867f4d2f96701c", null ],
-    [ "ExportMIDI", "classvrv_1_1_doc.html#a4b8be5eebe48afb3668ec97c133148a5", null ],
+    [ "ExportMIDI", "classvrv_1_1_doc.html#ae3fd9cb4a6ebcefba2c832266159ee3e", null ],
     [ "ExportTimemap", "classvrv_1_1_doc.html#a9632686d61ccb8de3814dd9c3028a19e", null ],
     [ "GenerateDocumentScoreDef", "classvrv_1_1_doc.html#add470d20e80b6fb3b87f5fbfb8cbd222", null ],
     [ "GenerateFooter", "classvrv_1_1_doc.html#a59a77ebea9671b372b2840c67fe49eb7", null ],

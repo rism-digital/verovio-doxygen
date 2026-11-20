@@ -1361,6 +1361,7 @@ var hierarchy =
     [ "vrv::LedgerLine", "classvrv_1_1_ledger_line.html", null ],
     [ "vrv::cmme::mensInfo", "structvrv_1_1cmme_1_1mens_info.html", null ],
     [ "vrv::MIDIHeldNote", "structvrv_1_1_m_i_d_i_held_note.html", null ],
+    [ "vrv::MIDIJsonBuilder", "classvrv_1_1_m_i_d_i_json_builder.html", null ],
     [ "vrv::MIDINote", "structvrv_1_1_m_i_d_i_note.html", null ],
     [ "vrv::NearEndCollision", "structvrv_1_1_near_end_collision.html", null ],
     [ "vrv::ObjectComparison", "classvrv_1_1_object_comparison.html", null ],

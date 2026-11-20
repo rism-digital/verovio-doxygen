@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classvrv_1_1_m_i_d_i_json_builder" kind="class" language="C++" prot="public">
+    <compoundname>vrv::MIDIJsonBuilder</compoundname>
+    <includes refid="midijsonbuilder_8h" local="no">midijsonbuilder.h</includes>
+    <innerclass refid="structvrv_1_1_m_i_d_i_json_builder_1_1_event" prot="private">vrv::MIDIJsonBuilder::Event</innerclass>
+      <sectiondef kind="user-defined">
+      <header>Constructors, destructors</header>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1afa29da014b3ebc874e612187bcd1a46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>vrv::MIDIJsonBuilder::MIDIJsonBuilder</definition>
+        <argsstring>(int ppq)</argsstring>
+        <name>MIDIJsonBuilder</name>
+        <param>
+          <type>int</type>
+          <declname>ppq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="36" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1ad1d27ff26e430e56b0a533213d268809" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual vrv::MIDIJsonBuilder::~MIDIJsonBuilder</definition>
+        <argsstring>()=default</argsstring>
+        <name>~MIDIJsonBuilder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="37" column="13"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <header>Add events, with the values written to the MIDI file</header>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a6ce68ec5b8d71688c61ebe5bb0f3f12f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddNoteOn</definition>
+        <argsstring>(int track, int tick, int channel, int key, int velocity, const std::string &amp;id)</argsstring>
+        <name>AddNoteOn</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>velocity</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="44" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a6dd8a2581d2ca119f08688c7b73694e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddNoteOff</definition>
+        <argsstring>(int track, int tick, int channel, int key)</argsstring>
+        <name>AddNoteOff</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="45" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a3ec7676eaf1c9c8ebd35ee1d57e700c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddController</definition>
+        <argsstring>(int track, int tick, int channel, int number, int value)</argsstring>
+        <name>AddController</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a16eb32bf192ce5aef243ebdf6f81433e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddProgramChange</definition>
+        <argsstring>(int track, int tick, int channel, int program)</argsstring>
+        <name>AddProgramChange</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>program</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="47" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a74a5195db44387882b07eeb58e631b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddTempo</definition>
+        <argsstring>(int track, int tick, double bpm)</argsstring>
+        <name>AddTempo</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bpm</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="48" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a8c730cabd798dc92df6fbbb58f57619d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddTimeSignature</definition>
+        <argsstring>(int track, int tick, int numerator, int denominator)</argsstring>
+        <name>AddTimeSignature</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numerator</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>denominator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a5aff95434f88fdebaffabaaec755ce4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddKeySignature</definition>
+        <argsstring>(int track, int tick, int fifths, bool minor)</argsstring>
+        <name>AddKeySignature</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fifths</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>minor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="50" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a668a31ec9ec30074171962cc28592089" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddMeta</definition>
+        <argsstring>(int track, int tick, MetaType type, const std::string &amp;text)</argsstring>
+        <name>AddMeta</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>MetaType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="51" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a029248645b79718d410958b6902ad7ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::AddOther</definition>
+        <argsstring>(int track, int tick)</argsstring>
+        <name>AddOther</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="53" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>MetaType</name>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4a9dffbf69ffba8bc38bc4e01abf4b1675" prot="public">
+          <name>Text</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4a9a33e81cd45fd4f3a6aa50538612babf" prot="public">
+          <name>TrackName</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4a9cf93757e76ec1ffdd8790ce3b74572e" prot="public">
+          <name>Lyrics</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4a0235c996b43b3799573658df41ef82f2" prot="public">
+          <name>Marker</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4aed464be7b547ef381f477fe4891e9f1f" prot="public">
+          <name>CuePoint</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="30" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bce" prot="private" static="no" strong="yes">
+        <type></type>
+        <name>EventType</name>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bcea392b06517dc40739343a9ef9533cad46" prot="private">
+          <name>NoteOn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bcea6138748b0dea7e54d0ab77709ab74ba1" prot="private">
+          <name>NoteOff</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bcea9bbf373797bf7cf7ba62c80023682e25" prot="private">
+          <name>Controller</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bceaf6c3d6e0b367daef634ebe1d1a2a34aa" prot="private">
+          <name>ProgramChange</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bcead65dabf567cb1c43358066ab02217611" prot="private">
+          <name>Tempo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bceab257862f6113a65ca9c23ad50d8676a6" prot="private">
+          <name>TimeSignature</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bceadd23ef66d29e3b7b6c54624bf08357b7" prot="private">
+          <name>KeySignature</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bceab6755d218d5f4e1cef9cce9cc39aeda9" prot="private">
+          <name>Meta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bcea6311ae17c1ee52b36e68aaf4ad066387" prot="private">
+          <name>Other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="73" column="5" bodyfile="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" bodystart="73" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classvrv_1_1_m_i_d_i_json_builder_1a5f70f930721bff0c5a39cc91ca4423a6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int vrv::MIDIJsonBuilder::m_ppq</definition>
+        <argsstring></argsstring>
+        <name>m_ppq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="105" column="9" bodyfile="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvrv_1_1_m_i_d_i_json_builder_1acb16a711218632ca2b6b2bf3b32eccca" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; Event &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;Event&gt; &gt; vrv::MIDIJsonBuilder::m_tracks</definition>
+        <argsstring></argsstring>
+        <name>m_tracks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="107" column="17" bodyfile="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1ac0f84ad5f31f9bc3bd9d8ec750602097" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::CopyNoteEvent</definition>
+        <argsstring>(int track, int index, int tick, const std::string &amp;id)</argsstring>
+        <name>CopyNoteEvent</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Copy the note-on or note-off event at the index in the track to another tick. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A copied note-on is given the ID passed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a73703acf8a313c1e07bf85f23dcb76f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int vrv::MIDIJsonBuilder::GetEventCount</definition>
+        <argsstring>(int track) const</argsstring>
+        <name>GetEventCount</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <briefdescription>
+<para>The number of events in a track, as in the MIDI file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="65" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a4555c1b60c4b6489a235fda9c2516ab4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vrv::MIDIJsonBuilder::Finalize</definition>
+        <argsstring>(int trackCount, std::string &amp;output) const</argsstring>
+        <name>Finalize</name>
+        <param>
+          <type>int</type>
+          <declname>trackCount</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>output</declname>
+        </param>
+        <briefdescription>
+<para>Build the JSON. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>trackCount is the number of tracks of the MIDI file. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="70" column="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a89de6cd55e7e9b1e86d3a4f192880a96" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Event &amp;</type>
+        <definition>Event&amp; vrv::MIDIJsonBuilder::AddEvent</definition>
+        <argsstring>(int track, EventType type, int tick)</argsstring>
+        <name>AddEvent</name>
+        <param>
+          <type>int</type>
+          <declname>track</declname>
+        </param>
+        <param>
+          <type>EventType</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tick</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="99" column="11"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classvrv_1_1_m_i_d_i_json_builder_1a8a7440a24d327e8a05d7e9a8f78b90d8" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool vrv::MIDIJsonBuilder::IsMeta</definition>
+        <argsstring>(const Event &amp;event)</argsstring>
+        <name>IsMeta</name>
+        <param>
+          <type>const Event &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="101" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This class collects the events of a MIDI export and builds the MIDI JSON from them. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classvrv_1_1_doc_1ae3fd9cb4a6ebcefba2c832266159ee3e" kindref="member">Doc::ExportMIDI()</ref> and <ref refid="classvrv_1_1_generate_m_i_d_i_functor" kindref="compound">GenerateMIDIFunctor</ref> add every event they write to the MIDI file here too, with the same track, tick, channel and values, and the ID of the note for note-on events. The events of a track are kept in the order of the MIDI file, so that an event can be found by its index. <ref refid="classvrv_1_1_m_i_d_i_json_builder_1a4555c1b60c4b6489a235fda9c2516ab4" kindref="member">Finalize()</ref> builds the JSON once all events are collected. The structure is the one of @tonejs/midi (Midi.toJSON()) with the ID added to each note. </para>
+    </detaileddescription>
+    <location file="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" line="28" column="1" bodyfile="/home/runner/work/verovio/verovio/include/vrv/midijsonbuilder.h" bodystart="28" bodyend="108"/>
+    <listofallmembers>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a3ec7676eaf1c9c8ebd35ee1d57e700c0" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddController</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a89de6cd55e7e9b1e86d3a4f192880a96" prot="private" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddEvent</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a5aff95434f88fdebaffabaaec755ce4d" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddKeySignature</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a668a31ec9ec30074171962cc28592089" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddMeta</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a6dd8a2581d2ca119f08688c7b73694e7" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddNoteOff</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a6ce68ec5b8d71688c61ebe5bb0f3f12f" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddNoteOn</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a029248645b79718d410958b6902ad7ac" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddOther</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a16eb32bf192ce5aef243ebdf6f81433e" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddProgramChange</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a74a5195db44387882b07eeb58e631b7d" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddTempo</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a8c730cabd798dc92df6fbbb58f57619d" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>AddTimeSignature</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1ac0f84ad5f31f9bc3bd9d8ec750602097" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>CopyNoteEvent</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1ad1aeb7649b3e00c35399f3ccb3392bce" prot="private" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>EventType</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a4555c1b60c4b6489a235fda9c2516ab4" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>Finalize</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a73703acf8a313c1e07bf85f23dcb76f2" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>GetEventCount</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a8a7440a24d327e8a05d7e9a8f78b90d8" prot="private" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>IsMeta</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1a5f70f930721bff0c5a39cc91ca4423a6" prot="private" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>m_ppq</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1acb16a711218632ca2b6b2bf3b32eccca" prot="private" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>m_tracks</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1ab1bebb495011f243ec3c71a83d82c2e4" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>MetaType</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1afa29da014b3ebc874e612187bcd1a46a" prot="public" virt="non-virtual"><scope>vrv::MIDIJsonBuilder</scope><name>MIDIJsonBuilder</name></member>
+      <member refid="classvrv_1_1_m_i_d_i_json_builder_1ad1d27ff26e430e56b0a533213d268809" prot="public" virt="virtual"><scope>vrv::MIDIJsonBuilder</scope><name>~MIDIJsonBuilder</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

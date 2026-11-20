@@ -157,6 +157,7 @@ var files_dup =
     [ "metersig.h", "metersig_8h_source.html", null ],
     [ "metersiggrp.h", "metersiggrp_8h_source.html", null ],
     [ "midifunctor.h", "midifunctor_8h_source.html", null ],
+    [ "midijsonbuilder.h", "midijsonbuilder_8h_source.html", null ],
     [ "miscfunctor.h", "miscfunctor_8h_source.html", null ],
     [ "mnum.h", "mnum_8h_source.html", null ],
     [ "mordent.h", "mordent_8h_source.html", null ],
