@@ -1,18 +1,14 @@
 var searchData=
 [
-  ['parse_2496',['Parse',['../classvrv_1_1_doc_selection.html#af0b386df41afb9e204b4776c13976a9b',1,'vrv::DocSelection']]],
-  ['parseaddsylaction_2497',['ParseAddSylAction',['../classvrv_1_1_editor_toolkit_neume.html#abb945ed27a7e5f9755873826ae100ca4',1,'vrv::EditorToolkitNeume']]],
-  ['parseeditoraction_2498',['ParseEditorAction',['../classvrv_1_1_editor_toolkit.html#a4072ba0fc25bf93cf164daa8b0772f2f',1,'vrv::EditorToolkit::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_neume.html#a2308ad0010cf842ec7c9e86252f15850',1,'vrv::EditorToolkitNeume::ParseEditorAction()'],['../classvrv_1_1_editor_toolkit_shared.html#a175437957380f6c62e8c2384b2e03936',1,'vrv::EditorToolkitShared::ParseEditorAction()']]],
-  ['parseinsertcursorbyduraction_2499',['ParseInsertCursorByDurAction',['../classvrv_1_1_editor_toolkit_c_m_n.html#ae763617401108392a4d03458569f7d14',1,'vrv::EditorToolkitCMN']]],
-  ['performboundingboxalignment_2500',['PerformBoundingBoxAlignment',['../classvrv_1_1_alignment.html#afb339241a9493a380e64c673f8adca84',1,'vrv::Alignment']]],
-  ['pinbundleddata_2501',['PinBundledData',['../classvrv_1_1_font_store.html#a0e73449ef8f229ad6a51c773dc125b36',1,'vrv::FontStore']]],
-  ['pitchdifferenceto_2502',['PitchDifferenceTo',['../classvrv_1_1_pitch_interface.html#a3f1089bfeddc84c7b3c31e3a239b4a76',1,'vrv::PitchInterface']]],
-  ['pitchorlocdifferenceto_2503',['PitchOrLocDifferenceTo',['../classvrv_1_1_nc.html#aaaa97986f6e4a2251996515827a17e71',1,'vrv::Nc']]],
-  ['pnametopclass_2504',['PnameToPclass',['../classvrv_1_1_note.html#ab9dc5dff1a2e11c5e182dd72208c587d',1,'vrv::Note']]],
-  ['positioninchord_2505',['PositionInChord',['../classvrv_1_1_chord.html#aad7e7092366522e7bb388afb98a215e2',1,'vrv::Chord']]],
-  ['preparedata_2506',['PrepareData',['../classvrv_1_1_doc.html#a863c2bb1a0b28c6f52adb5ce662a14e8',1,'vrv::Doc']]],
-  ['printoptionusage_2507',['PrintOptionUsage',['../classvrv_1_1_toolkit.html#ade313a25a731e494eba87d3c4619cbad',1,'vrv::Toolkit']]],
-  ['printoptionusageoutput_2508',['PrintOptionUsageOutput',['../classvrv_1_1_toolkit.html#ab9ba4f30abf5a45944e83926efad3294',1,'vrv::Toolkit']]],
-  ['process_2509',['Process',['../classvrv_1_1_object.html#ab1b4dbc50eb6f628feea75d202a22e18',1,'vrv::Object']]],
-  ['pushalignmentsright_2510',['PushAlignmentsRight',['../classvrv_1_1_measure_aligner.html#a2ea7245b5f0cf0bb1bc4fc144f29e8af',1,'vrv::MeasureAligner']]]
+  ['object_2484',['Object',['../classvrv_1_1_object.html#a8be4ecf7908559751e728551718a8bfc',1,'vrv::Object']]],
+  ['ok_2485',['Ok',['../classvrv_1_1_resources.html#ab2c9f323ba47fad214f37f9aad3d9525',1,'vrv::Resources']]],
+  ['operator_25_2486',['operator%',['../classvrv_1_1_fraction.html#a4746e7e5cf311cefa26e228b26d8bceb',1,'vrv::Fraction']]],
+  ['operator_2a_2487',['operator*',['../classvrv_1_1_fraction.html#a5563d80988263170927b513eb38b8df9',1,'vrv::Fraction']]],
+  ['operator_2b_2488',['operator+',['../classvrv_1_1_fraction.html#a4c6a22ba45f016ba6371321abfd88372',1,'vrv::Fraction']]],
+  ['operator_2d_2489',['operator-',['../classvrv_1_1_fraction.html#a12f85b298c02a1e6abb9077061f7bc1d',1,'vrv::Fraction']]],
+  ['operator_2f_2490',['operator/',['../classvrv_1_1_fraction.html#a1639fe5f665decc11763d02b28a9d6a5',1,'vrv::Fraction']]],
+  ['operator_3c_3d_3e_2491',['operator&lt;=&gt;',['../classvrv_1_1_fraction.html#aa825086a75ec8228b03df6d1eac2d519',1,'vrv::Fraction']]],
+  ['operator_3d_2492',['operator=',['../classvrv_1_1_object.html#a6ad51ecc97faf69c8fa8432a780aed44',1,'vrv::Object']]],
+  ['operator_3d_3d_2493',['operator==',['../classvrv_1_1_fraction.html#a9e450d676d4ea8a47530ff23739ec702',1,'vrv::Fraction']]],
+  ['optionschanged_2494',['OptionsChanged',['../classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1',1,'vrv::EditorToolkit']]]
 ];

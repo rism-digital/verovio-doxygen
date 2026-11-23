@@ -1,5 +1,7 @@
 var NAVTREEINDEX26 =
 {
+"classvrv_1_1_resources.html#ad177a4bd037d8791f0552cc710de96c9":[1,0,0,380,5],
+"classvrv_1_1_resources.html#ae8d75f314a9d0c945a44a27104d2e740":[1,0,0,380,10],
 "classvrv_1_1_resources.html#aee770c98cbfe3fae1df70efbe651cf02":[1,0,0,380,13],
 "classvrv_1_1_resources.html#af7823e10567dae86983fad00b0d25290":[1,0,0,380,20],
 "classvrv_1_1_rest.html":[1,0,0,381],
@@ -247,7 +249,5 @@ var NAVTREEINDEX26 =
 "classvrv_1_1_score_def_set_grp_sym_functor.html":[1,0,0,399],
 "classvrv_1_1_score_def_set_grp_sym_functor.html#a0d902ea1574919b0e23ee22b9b333da1":[1,0,0,399,1],
 "classvrv_1_1_score_def_set_grp_sym_functor.html#a37b014148ed4bc96dddfc8586e087f5f":[1,0,0,399,3],
-"classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167":[1,0,0,399,2],
-"classvrv_1_1_score_def_set_grp_sym_functor.html#a73221d3ba344e5aa7768a855b7866c29":[1,0,0,399,4],
-"classvrv_1_1_score_def_set_grp_sym_functor.html#a747e54386af76ceff26e617d43da4870":[1,0,0,399,0]
+"classvrv_1_1_score_def_set_grp_sym_functor.html#a3a2e58a0bef5ff65f00f1a48e7f04167":[1,0,0,399,2]
 };

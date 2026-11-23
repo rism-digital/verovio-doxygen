@@ -1,11 +1,21 @@
 var searchData=
 [
-  ['makevisible_2477',['MakeVisible',['../classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6',1,'vrv::Mdiv']]],
-  ['markascastoff_2478',['MarkAsCastOff',['../classvrv_1_1_doc.html#abafdc3da698d61eab76a65645fa21350',1,'vrv::Doc']]],
-  ['markupaddsyl_2479',['MarkupAddSyl',['../classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f',1,'vrv::Syllable']]],
-  ['mergetextstyles_2480',['MergeTextStyles',['../classvrv_1_1_score_def_interface.html#a5e757a1f26916ea9978f5737e183ed2a',1,'vrv::ScoreDefInterface']]],
-  ['modify_2481',['Modify',['../classvrv_1_1_object.html#a30996d1e8460f2110900b490425c16ec',1,'vrv::Object']]],
-  ['movechildrenfrom_2482',['MoveChildrenFrom',['../classvrv_1_1_object.html#aa846e8099e10d6cf427e8255e4a62dd4',1,'vrv::Object']]],
-  ['movefronthorizontal_2483',['MoveFrontHorizontal',['../classvrv_1_1_floating_curve_positioner.html#a4fbc85ac14f92d9d51fe346f56a5a574',1,'vrv::FloatingCurvePositioner']]],
-  ['moveitselfto_2484',['MoveItselfTo',['../classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e',1,'vrv::Object']]]
+  ['layout_2457',['LayOut',['../classvrv_1_1_page.html#a006e4902c1b476ded557eb86c86242a1',1,'vrv::Page']]],
+  ['layoutall_2458',['LayOutAll',['../classvrv_1_1_pages.html#aceb9edb9067b17733f9f7cf3405b1a91',1,'vrv::Pages']]],
+  ['layouthorizontally_2459',['LayOutHorizontally',['../classvrv_1_1_page.html#a81afdc28b7093b3c034b30b9d2177d7a',1,'vrv::Page']]],
+  ['layouthorizontallywithcache_2460',['LayOutHorizontallyWithCache',['../classvrv_1_1_page.html#a4a63bb8ba121e2eb732648fb22795664',1,'vrv::Page']]],
+  ['layoutpitchpos_2461',['LayOutPitchPos',['../classvrv_1_1_page.html#a801f4b7752db01eb9201e355fe4aa000',1,'vrv::Page']]],
+  ['layouttranscription_2462',['LayOutTranscription',['../classvrv_1_1_page.html#a0c2dafbc00b0f3185a4ee416f019498f',1,'vrv::Page']]],
+  ['layoutvertically_2463',['LayOutVertically',['../classvrv_1_1_page.html#ab16b3f4c2bcc87738e77032c393d638d',1,'vrv::Page']]],
+  ['load_2464',['Load',['../classvrv_1_1_zip_file_reader.html#a1ef09100ea6be6f0e6a2a37f99fae81e',1,'vrv::ZipFileReader']]],
+  ['loadbytes_2465',['LoadBytes',['../classvrv_1_1_zip_file_reader.html#af8d5de2b5412e72104c97c3605aabb59',1,'vrv::ZipFileReader']]],
+  ['loaddata_2466',['LoadData',['../classvrv_1_1_toolkit.html#a9a08fd8e89da6c2c709eaae69e28b2b1',1,'vrv::Toolkit::LoadData(const std::string &amp;data)'],['../classvrv_1_1_toolkit.html#af03d8520c77603ed893203b0fa5a8821',1,'vrv::Toolkit::LoadData(const std::string &amp;data, bool resetLogBuffer)']]],
+  ['loadfile_2467',['LoadFile',['../classvrv_1_1_toolkit.html#a3859f9341d415376b7d8f11a1aa8e352',1,'vrv::Toolkit']]],
+  ['loadfooter_2468',['LoadFooter',['../classvrv_1_1_running_element.html#a809a5cb7c0a8a873168576894ea5d3a0',1,'vrv::RunningElement']]],
+  ['loadzipdatabase64_2469',['LoadZipDataBase64',['../classvrv_1_1_toolkit.html#aeae2ad736af0f0d436c9131745057556',1,'vrv::Toolkit']]],
+  ['loadzipdatabuffer_2470',['LoadZipDataBuffer',['../classvrv_1_1_toolkit.html#abf4167617faed8347a7da3291e927e05',1,'vrv::Toolkit']]],
+  ['logdebugtree_2471',['LogDebugTree',['../classvrv_1_1_object.html#aab9ecbebd597a128912b7dd43a410b90',1,'vrv::Object']]],
+  ['logdebugtreemsg_2472',['LogDebugTreeMsg',['../classvrv_1_1_alignment.html#a56610938a75cd860b174ec00bfd0295c',1,'vrv::Alignment']]],
+  ['logredirectstart_2473',['LogRedirectStart',['../classvrv_1_1_toolkit.html#a3fd248c628b6e25a38ac0cb8b3dcd9f7',1,'vrv::Toolkit']]],
+  ['logredirectstop_2474',['LogRedirectStop',['../classvrv_1_1_toolkit.html#a3a00a9335de59deb1dd2785d5c944397',1,'vrv::Toolkit']]]
 ];

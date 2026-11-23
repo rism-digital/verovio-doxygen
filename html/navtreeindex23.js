@@ -1,5 +1,7 @@
 var NAVTREEINDEX23 =
 {
+"classvrv_1_1_ossia.html#a38f1fcb375d1ae2e94c12721547e1c96":[1,0,0,327,25],
+"classvrv_1_1_ossia.html#a3f1647794fb5221f74aa85a653619939":[1,0,0,327,29],
 "classvrv_1_1_ossia.html#a48ee8485bf5f3adb6d190b077e3e764b":[1,0,0,327,20],
 "classvrv_1_1_ossia.html#a4a06c473146db3a042e8f14e3389d1fe":[1,0,0,327,10],
 "classvrv_1_1_ossia.html#a53d9d3709ec7fc0a250e6e41fa301eb1":[1,0,0,327,16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX23 =
 "classvrv_1_1_phrase.html#ab64e689bec01f5b27bdee2df0f005668":[1,0,0,340,6],
 "classvrv_1_1_phrase.html#aceaeb06568d7f04c59ac4e4d6fe7f7de":[1,0,0,340,0],
 "classvrv_1_1_pitch_inflection.html":[1,0,0,341],
-"classvrv_1_1_pitch_inflection.html#a08fd982295bded9e502cac20e59990f3":[1,0,0,341,11],
-"classvrv_1_1_pitch_inflection.html#a2b46bcce3c80ec446f77810bb4ced1fd":[1,0,0,341,6],
-"classvrv_1_1_pitch_inflection.html#a36358ab9483482f993b1990241ed250e":[1,0,0,341,9]
+"classvrv_1_1_pitch_inflection.html#a08fd982295bded9e502cac20e59990f3":[1,0,0,341,11]
 };

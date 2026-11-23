@@ -1,6 +1,6 @@
 var classvrv_1_1_generate_m_i_d_i_functor =
 [
-    [ "GenerateMIDIFunctor", "classvrv_1_1_generate_m_i_d_i_functor.html#a617e84b45aaba84310de0fbe98685a0a", null ],
+    [ "GenerateMIDIFunctor", "classvrv_1_1_generate_m_i_d_i_functor.html#aa7811ee6b1ea0536ed3e016209c1f556", null ],
     [ "~GenerateMIDIFunctor", "classvrv_1_1_generate_m_i_d_i_functor.html#a990baf6a4555d98826e29ff490e05315", null ],
     [ "GetTempoEventTicks", "classvrv_1_1_generate_m_i_d_i_functor.html#acdeddb46c5a3b7549942f5f57de91455", null ],
     [ "ImplementsEndInterface", "classvrv_1_1_generate_m_i_d_i_functor.html#a45df2245c7a83928c30cc3b11727e89c", null ],
@@ -11,7 +11,6 @@ var classvrv_1_1_generate_m_i_d_i_functor =
     [ "SetDeferredNotes", "classvrv_1_1_generate_m_i_d_i_functor.html#a7043b4083488d75551a7b77ae5f69463", null ],
     [ "SetInstrDef", "classvrv_1_1_generate_m_i_d_i_functor.html#a4226c11912a2a5bbfbcf7df86aeaed41", null ],
     [ "SetLayerN", "classvrv_1_1_generate_m_i_d_i_functor.html#ad7572d7650ab02386cc9592ac02fb2d5", null ],
-    [ "SetMIDIJsonBuilder", "classvrv_1_1_generate_m_i_d_i_functor.html#a2e61d5133e9c3c3c09a44ca62ac368d0", null ],
     [ "SetNoCue", "classvrv_1_1_generate_m_i_d_i_functor.html#a7b78bb3b04296eabe0c996fe2cc87f3d", null ],
     [ "SetOctaves", "classvrv_1_1_generate_m_i_d_i_functor.html#a68b205341bbc045a6c024ba7b155d1ef", null ],
     [ "SetStaffN", "classvrv_1_1_generate_m_i_d_i_functor.html#a900912f9ea5bfed0066006eae0928d84", null ],

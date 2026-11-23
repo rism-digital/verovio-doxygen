@@ -15,5 +15,6 @@ var searchData=
   ['bracketspan_123',['BracketSpan',['../classvrv_1_1_bracket_span.html',1,'vrv']]],
   ['breath_124',['Breath',['../classvrv_1_1_breath.html',1,'vrv']]],
   ['brush_125',['Brush',['../classvrv_1_1_brush.html',1,'vrv']]],
-  ['btrem_126',['BTrem',['../classvrv_1_1_b_trem.html',1,'vrv']]]
+  ['btrem_126',['BTrem',['../classvrv_1_1_b_trem.html',1,'vrv']]],
+  ['build_127',['Build',['../classvrv_1_1_m_i_d_i_builder.html#a568841171e6d443a60439e75f2c85ea2',1,'vrv::MIDIBuilder']]]
 ];

@@ -1,14 +1,12 @@
 var searchData=
 [
-  ['object_2485',['Object',['../classvrv_1_1_object.html#a8be4ecf7908559751e728551718a8bfc',1,'vrv::Object']]],
-  ['ok_2486',['Ok',['../classvrv_1_1_resources.html#ab2c9f323ba47fad214f37f9aad3d9525',1,'vrv::Resources']]],
-  ['operator_25_2487',['operator%',['../classvrv_1_1_fraction.html#a4746e7e5cf311cefa26e228b26d8bceb',1,'vrv::Fraction']]],
-  ['operator_2a_2488',['operator*',['../classvrv_1_1_fraction.html#a5563d80988263170927b513eb38b8df9',1,'vrv::Fraction']]],
-  ['operator_2b_2489',['operator+',['../classvrv_1_1_fraction.html#a4c6a22ba45f016ba6371321abfd88372',1,'vrv::Fraction']]],
-  ['operator_2d_2490',['operator-',['../classvrv_1_1_fraction.html#a12f85b298c02a1e6abb9077061f7bc1d',1,'vrv::Fraction']]],
-  ['operator_2f_2491',['operator/',['../classvrv_1_1_fraction.html#a1639fe5f665decc11763d02b28a9d6a5',1,'vrv::Fraction']]],
-  ['operator_3c_3d_3e_2492',['operator&lt;=&gt;',['../classvrv_1_1_fraction.html#aa825086a75ec8228b03df6d1eac2d519',1,'vrv::Fraction']]],
-  ['operator_3d_2493',['operator=',['../classvrv_1_1_object.html#a6ad51ecc97faf69c8fa8432a780aed44',1,'vrv::Object']]],
-  ['operator_3d_3d_2494',['operator==',['../classvrv_1_1_fraction.html#a9e450d676d4ea8a47530ff23739ec702',1,'vrv::Fraction']]],
-  ['optionschanged_2495',['OptionsChanged',['../classvrv_1_1_editor_toolkit.html#aea7f982eda641f2d108a51f235509ec1',1,'vrv::EditorToolkit']]]
+  ['makevisible_2475',['MakeVisible',['../classvrv_1_1_mdiv.html#aed76997a32ca68f9ca9f2c1dc614bca6',1,'vrv::Mdiv']]],
+  ['markascastoff_2476',['MarkAsCastOff',['../classvrv_1_1_doc.html#abafdc3da698d61eab76a65645fa21350',1,'vrv::Doc']]],
+  ['markupaddsyl_2477',['MarkupAddSyl',['../classvrv_1_1_syllable.html#a380ee2dac242e43806ceb337600ea36f',1,'vrv::Syllable']]],
+  ['mergetextstyles_2478',['MergeTextStyles',['../classvrv_1_1_score_def_interface.html#a5e757a1f26916ea9978f5737e183ed2a',1,'vrv::ScoreDefInterface']]],
+  ['midibuilder_2479',['MIDIBuilder',['../classvrv_1_1_m_i_d_i_builder.html#abe37b907423152e4ea48db4494ec6d8e',1,'vrv::MIDIBuilder']]],
+  ['modify_2480',['Modify',['../classvrv_1_1_object.html#a30996d1e8460f2110900b490425c16ec',1,'vrv::Object']]],
+  ['movechildrenfrom_2481',['MoveChildrenFrom',['../classvrv_1_1_object.html#aa846e8099e10d6cf427e8255e4a62dd4',1,'vrv::Object']]],
+  ['movefronthorizontal_2482',['MoveFrontHorizontal',['../classvrv_1_1_floating_curve_positioner.html#a4fbc85ac14f92d9d51fe346f56a5a574',1,'vrv::FloatingCurvePositioner']]],
+  ['moveitselfto_2483',['MoveItselfTo',['../classvrv_1_1_object.html#ac7063ea155c08f4e39e5c59b735f1d9e',1,'vrv::Object']]]
 ];

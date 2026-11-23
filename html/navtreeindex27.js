@@ -1,5 +1,7 @@
 var NAVTREEINDEX27 =
 {
+"classvrv_1_1_score_def_set_grp_sym_functor.html#a73221d3ba344e5aa7768a855b7866c29":[1,0,0,399,4],
+"classvrv_1_1_score_def_set_grp_sym_functor.html#a747e54386af76ceff26e617d43da4870":[1,0,0,399,0],
 "classvrv_1_1_score_def_set_ossia_functor.html":[1,0,0,400],
 "classvrv_1_1_score_def_set_ossia_functor.html#a37d870f0575e3ebb3c29879b8eed34a9":[1,0,0,400,4],
 "classvrv_1_1_score_def_set_ossia_functor.html#a4a64c414fa90fdb853b53a7956073c78":[1,0,0,400,9],
@@ -247,7 +249,5 @@ var NAVTREEINDEX27 =
 "classvrv_1_1_staff_alignment.html#a2d87d3d047765e77135b7112c57684b2":[1,0,0,456,39],
 "classvrv_1_1_staff_alignment.html#a2de2f6ed7e4b30e3cbd4f0f1d650fc89":[1,0,0,456,48],
 "classvrv_1_1_staff_alignment.html#a32543b4e39634d6ac3fb5822ee67f69b":[1,0,0,456,24],
-"classvrv_1_1_staff_alignment.html#a3fdda508f142cf8b1ba6f63e1d07608a":[1,0,0,456,35],
-"classvrv_1_1_staff_alignment.html#a45c9254734f194b8625f2ecb835d2dbc":[1,0,0,456,17],
-"classvrv_1_1_staff_alignment.html#a46bbc916af3129153608f26d68f42f2d":[1,0,0,456,45]
+"classvrv_1_1_staff_alignment.html#a3fdda508f142cf8b1ba6f63e1d07608a":[1,0,0,456,35]
 };

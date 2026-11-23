@@ -1,15 +1,10 @@
 var searchData=
 [
-  ['uncastoffdoc_2670',['UnCastOffDoc',['../classvrv_1_1_doc.html#a7cb1b2f4b17d550ec69fae48d0eb065f',1,'vrv::Doc']]],
-  ['unescapehtmlentities_2671',['unescapeHtmlEntities',['../classvrv_1_1_humdrum_input.html#a3a9cb0e5cf601ccbe32c261cd96b5ab0',1,'vrv::HumdrumInput']]],
-  ['updatecontrolpointparams_2672',['UpdateControlPointParams',['../classvrv_1_1_bezier_curve.html#ac67345936404ebba9295358c35a6c562',1,'vrv::BezierCurve']]],
-  ['updatecurveparams_2673',['UpdateCurveParams',['../classvrv_1_1_floating_curve_positioner.html#a30ccff64031b6f8e36666e5ff1890223',1,'vrv::FloatingCurvePositioner']]],
-  ['updatefromtransloc_2674',['UpdateFromTransLoc',['../classvrv_1_1_rest.html#a2abfa9a01f57ac36187c78ebe7a30b9a',1,'vrv::Rest']]],
-  ['updatekeysig_2675',['UpdateKeySig',['../classvrv_1_1_score_def.html#ab4c1682800e8a866712b69deb6a0a6f3',1,'vrv::ScoreDef']]],
-  ['updatemetersig_2676',['UpdateMeterSig',['../classvrv_1_1_score_def.html#ae4ec1cc8724da05cd89e8479fec7ef8d',1,'vrv::ScoreDef']]],
-  ['updatepagedrawingsizes_2677',['UpdatePageDrawingSizes',['../classvrv_1_1_doc.html#a1fc55e74595046fc57621f3a0ad52788',1,'vrv::Doc']]],
-  ['updatestemlength_2678',['UpdateStemLength',['../classvrv_1_1_beam_element_coord.html#a4d642d3e677fe0c54be30d4b2c14524f',1,'vrv::BeamElementCoord']]],
-  ['useblockstyle_2679',['UseBlockStyle',['../classvrv_1_1_multi_rest.html#a6373ae6443b859e81d2acd04aa549cc7',1,'vrv::MultiRest']]],
-  ['useglobalstyling_2680',['UseGlobalStyling',['../classvrv_1_1_device_context.html#afd76f01c9742de3d4a0446f905b1003b',1,'vrv::DeviceContext::UseGlobalStyling()'],['../classvrv_1_1_svg_device_context.html#a9982cebfe646f247292b295840b7bb94',1,'vrv::SvgDeviceContext::UseGlobalStyling()']]],
-  ['useglobaltextstyling_2681',['UseGlobalTextStyling',['../classvrv_1_1_device_context.html#aaf646e9fdd2ae01f7983605892ebcabe',1,'vrv::DeviceContext::UseGlobalTextStyling()'],['../classvrv_1_1_svg_device_context.html#a91818dc3adf0df0716443849df390966',1,'vrv::SvgDeviceContext::UseGlobalTextStyling()']]]
+  ['thisorsameaslink_2662',['ThisOrSameasLink',['../classvrv_1_1_layer_element.html#acb9de9e04da28faefe842c4d56e2c1a0',1,'vrv::LayerElement']]],
+  ['todouble_2663',['ToDouble',['../classvrv_1_1_fraction.html#abc5b9512946155d481557c65b74647b2',1,'vrv::Fraction']]],
+  ['todur_2664',['ToDur',['../classvrv_1_1_fraction.html#a4c4f52e9e30cefafaa554f2773a41108',1,'vrv::Fraction']]],
+  ['tojson_2665',['ToJson',['../classvrv_1_1_expansion_map.html#a51f1783fd2dc369d2629a1c089cfd077',1,'vrv::ExpansionMap::ToJson()'],['../classvrv_1_1_feature_extractor.html#a088178e8f5cfd6abe00a3070d2f8bbcf',1,'vrv::FeatureExtractor::ToJson()'],['../classvrv_1_1_option.html#a8197df949d810a3f12aac223d8593036',1,'vrv::Option::ToJson()'],['../classvrv_1_1_timemap.html#a45a49bb50831dd3565eb0afd80a61c61',1,'vrv::Timemap::ToJson()']]],
+  ['toolkit_2666',['Toolkit',['../classvrv_1_1_toolkit.html#ad009ed5b8852f67843a34c4b6fd1e3c7',1,'vrv::Toolkit']]],
+  ['tostring_2667',['ToString',['../classvrv_1_1_fraction.html#ac3142f465ea3f2ce947a6977ea3ed8ac',1,'vrv::Fraction']]],
+  ['transposedoc_2668',['TransposeDoc',['../classvrv_1_1_doc.html#a303c7a587723539a78b83f642111f2a1',1,'vrv::Doc']]]
 ];

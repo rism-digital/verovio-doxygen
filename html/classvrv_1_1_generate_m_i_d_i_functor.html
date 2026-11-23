@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('classvrv_1_1_generate_m_i_d_i_functor.
 </div><!--header-->
 <div class="contents">
 
-<p>This class performs the export to a MidiFile.  
+<p>This class turns notation and playback timing into events for <a class="el" href="classvrv_1_1_m_i_d_i_builder.html" title="Builds the MIDI events of a playback document for binary or JSON output.">MIDIBuilder</a>.  
  <a href="classvrv_1_1_generate_m_i_d_i_functor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="midifunctor_8h_source.html">midifunctor.h</a>&gt;</code></p>
@@ -114,9 +114,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a45df2245c7a83928c30cc3b11727e89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the functor implements the end interface. <br /></td></tr>
 <tr class="separator:a45df2245c7a83928c30cc3b11727e89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Constructors, destructors</div></td></tr>
-<tr class="memitem:a617e84b45aaba84310de0fbe98685a0a"><td class="memItemLeft" align="right" valign="top"><a id="a617e84b45aaba84310de0fbe98685a0a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateMIDIFunctor</b> (smf::MidiFile *midiFile)</td></tr>
-<tr class="separator:a617e84b45aaba84310de0fbe98685a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7811ee6b1ea0536ed3e016209c1f556"><td class="memItemLeft" align="right" valign="top"><a id="aa7811ee6b1ea0536ed3e016209c1f556"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateMIDIFunctor</b> (<a class="el" href="classvrv_1_1_m_i_d_i_builder.html">MIDIBuilder</a> &amp;midiBuilder)</td></tr>
+<tr class="separator:aa7811ee6b1ea0536ed3e016209c1f556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a990baf6a4555d98826e29ff490e05315"><td class="memItemLeft" align="right" valign="top"><a id="a990baf6a4555d98826e29ff490e05315"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~GenerateMIDIFunctor</b> ()=default</td></tr>
 <tr class="separator:a990baf6a4555d98826e29ff490e05315"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,9 +143,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeferredNotes</b> 
 <tr class="memitem:ad7572d7650ab02386cc9592ac02fb2d5"><td class="memItemLeft" align="right" valign="top"><a id="ad7572d7650ab02386cc9592ac02fb2d5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetLayerN</b> (int layerN)</td></tr>
 <tr class="separator:ad7572d7650ab02386cc9592ac02fb2d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e61d5133e9c3c3c09a44ca62ac368d0"><td class="memItemLeft" align="right" valign="top"><a id="a2e61d5133e9c3c3c09a44ca62ac368d0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMIDIJsonBuilder</b> (<a class="el" href="classvrv_1_1_m_i_d_i_json_builder.html">MIDIJsonBuilder</a> *midiJson)</td></tr>
-<tr class="separator:a2e61d5133e9c3c3c09a44ca62ac368d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b205341bbc045a6c024ba7b155d1ef"><td class="memItemLeft" align="right" valign="top"><a id="a68b205341bbc045a6c024ba7b155d1ef"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOctaves</b> (const std::list&lt; <a class="el" href="structvrv_1_1_octave_info.html">OctaveInfo</a> &gt; &amp;octaves)</td></tr>
 <tr class="separator:a68b205341bbc045a6c024ba7b155d1ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1085,7 +1082,7 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitF
 <tr class="separator:a8b1bdc81100822903995c7ed10464cb0 inherit pub_methods_classvrv_1_1_const_functor_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class performs the export to a MidiFile. </p>
+<div class="textblock"><p>This class turns notation and playback timing into events for <a class="el" href="classvrv_1_1_m_i_d_i_builder.html" title="Builds the MIDI events of a playback document for binary or JSON output.">MIDIBuilder</a>. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="midifunctor_8h_source.html">midifunctor.h</a></li>
 </ul>
@@ -1095,7 +1092,7 @@ virtual FunctorCode&#160;</td><td class="memItemRight" valign="bottom"><b>VisitF
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>vrv</b></li><li class="navelem"><a class="el" href="classvrv_1_1_generate_m_i_d_i_functor.html">GenerateMIDIFunctor</a></li>
-    <li class="footer">Generated on Sun Nov 22 2026 11:29:45 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Mon Nov 23 2026 17:17:23 for Verovio by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
